@@ -22,15 +22,17 @@ class Book extends Model implements StaplerableInterface
 		//画像の投稿設定
 		$this->hasAttachedFile('pic', [
 
-	      //画像の切り取るサイズのパターン
-	      'styles' => [
-	        'large' => '640x480#',
-	        'medium' => '300x200#',
-	        'thumb' => '100x75#'
-	      ],
+	 //      //画像の切り取るサイズのパターン
+	 //      'styles' => [
+	 //        'large' => '640x480#',
+	 //        'medium' => '300x200#',
+	 //        'thumb' => '100x75#'
+	 //      ],
 
 	      //格納ディレクトリ(public配下からのパス)
-	      'url' => '/uploads/topics/:id/:style/:filename'
+	      // 'url' => '/uploads/books/:id/:style/:filename'
+	      'url' => '/uploads/books/:id/:filename'
+
 	      ]);
 		parent::__construct($attributes);
     }

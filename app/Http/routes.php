@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BooksController@index');
+
+// 追加
+Route::get('/books/add', 'BooksController@add');
+Route::post('/books/create', 'BooksController@create');
+
+// 表示
+Route::get('/books/{id}', 'BooksController@edit');
+
+// 編集
+Route::get('/books/edit/{id}', 'BooksController@edit');
+Route::post('/books/update', 'BooksController@update');
+
+// 削除
+Route::get('/books/delete', 'BooksController@delete');
+
