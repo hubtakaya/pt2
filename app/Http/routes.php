@@ -18,12 +18,20 @@ Route::get('/books/add', 'BooksController@add');
 Route::post('/books/create', 'BooksController@create');
 
 // 表示
-Route::get('/books/{id}', 'BooksController@edit');
+Route::get('/books/{id}', 'BooksController@show');
 
 // 編集
 Route::get('/books/edit/{id}', 'BooksController@edit');
-Route::post('/books/update', 'BooksController@update');
+Route::post('/books/update/{id}', 'BooksController@update');
 
 // 削除
 Route::get('/books/delete', 'BooksController@delete');
 
+// 認証のルート定義…
+Route::get('/auth/login', 'Auth\AuthController@getLogin');
+Route::post('/auth/login', 'Auth\AuthController@postLogin');
+Route::get('/auth/logout', 'Auth\AuthController@getLogout');
+
+// 登録のルート定義…
+Route::get('/auth/register', 'Auth\AuthController@getRegister');
+Route::post('/auth/register', 'Auth\AuthController@postRegister');

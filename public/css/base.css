@@ -345,8 +345,9 @@ main .container{
 
 @media screen and (max-width: 301px){
 	.list_msg p{
-		margin-right: 5px;
-		margin-left: 5px;
+		padding-right: 5px;
+		padding-left: 5px;
+		box-sizing: border-box;
 	}
 	.list_image img {
 	margin-left: 5px;
@@ -487,12 +488,14 @@ td input, textarea {
 @media screen and (max-width: 480px){
 
 	table, tbody {
-		width: 99%;
+		width: 100%;
+		box-sizing: border-box;
 	}
 
 	tbody tr {
 		display: block;
-		min-width: 99%;
+		min-width: 100%;
+		box-sizing: border-box;
 	}
 
 	th, td {
@@ -673,6 +676,15 @@ table + p {
 #formbtn:hover,
 #signInbtn:hover {
 	opacity: 0.5;
+}
+
+#newAccount a {
+	display: block;
+	width: 200px;
+	margin: 30px auto;
+	text-align: center;
+	color: #70996a;
+	text-decoration: underline;
 }
 
 /* myPage */
