@@ -17,16 +17,19 @@ class BooksController extends Controller
 
     	// Books テーブルのデータをすべて取得する
     	$books = Book::all();
-    	return view('books.index', compact('books'));
+    	return view('index', compact('books'))
+        ->with(['nav' => 'top_nav',
+                'headerFalse' => 'true']);
     }
 
     // 表示
     public function show($id) {
 
     	// Books テーブルのデータをすべて取得する
-    	$book = Book::finrOrFail();
+    	$book = Book::findOrFail($id);
     	return view('books.show', compact('book'))
-    		->with('pageTitle', [$book->title, 'のコメント']);
+    		->with(['pageTitle' => '『' . $book->title . '』',
+                'pageLabel' => $book->title]);
     }
 
     // 追加
@@ -39,7 +42,7 @@ class BooksController extends Controller
     public function create(Request $request) {
 
     	$this->validate($request, [
-    		'title' => 'required|min:3',
+    		'title' => 'required',
     		'intro' => 'required',
     		// pic も必須項目にしたい。
     		'pic'   => 'required|image|max:2000',
@@ -58,8 +61,8 @@ class BooksController extends Controller
     public function edit($id) {
     	// $id に該当するデータ1件取得する
     	$book = Book::findOrFail($id);
-    	return view('books.edit', compact('topic'))
-    		->with('pageTitle', '編集');
+    	return view('books.edit', compact('book'))
+    		->with(['pageTitle' => 'Editting Books', 'pageLabel' => 'Books 編集']);
     }
 
     public function update($id, Request $request) {

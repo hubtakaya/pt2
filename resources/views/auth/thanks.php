@@ -3,48 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
-	<title>{{{ isset($pageTitle) ? $pageTitle : "推薦図書.com" }}}</title>
+	<title>ユーザー登録完了</title>
 	<meta name="Keywords" content="本,おすすめ,推薦図書">
 	<meta name="Description" content="読んだことのある本についてユーザーの
-		皆さんが自由に感想を投稿していきます。
-		同じく読んだことがある人と意見を交換するも良し、
-		新しく読む本を見つけるきっかけにするも良しのサイトです。">
+	皆さんが自由に感想を投稿していきます。
+	同じく読んだことがある人と意見を交換するも良し、
+	新しく読む本を見つけるきっかけにするも良しのサイトです。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- stylesheet -->
-	@yield('addCSS')
+	<link rel="stylesheet" href="../css/base.css" media="all">
 </head>
 
 <body>
-
 <header>
-	<div id="{{{ isset($nav) ? $nav : 'other_nav' }}}" class="clearfix">
-		<div id="nav_msg">
-		<ul>
-			<li><a href="http://localhost:81/pt2/auth/login">■ログイン</a></li>
-			<li><a href="#">■本を探す</a></li>
-			<li><a href="http://localhost:81/pt2">■ホームに戻る</a></li>
-		</ul>
-		</div><!-- #nav_msg -->
-	</div><!-- /.other_nav -->
+<div id="other_nav">
+	<div id="nav_msg">
+	<ul>
+		<li><a href="signIn.php">■ログイン</a></li>
+		<li><a href="#">■本を探す</a></li>
+		<li><a href="index.html">■ホームに戻る</a></li>
+	</ul>
+	</div><!-- #nav_msg -->
+</div>
 
-@if (!isset($headerFalse))
-	<div id="header_MyPage">
-			<h2>{{{ isset($pageLabel) ? $pageLabel : "推薦図書.com" }}}</h2>
-	</div>
-@endif
-
-@yield('addHeaderDiv')
-
+<div id="header_MyPage">
+	<h2>Sign UP</h2>
+</div>
 </header>
 
-
-@yield('content')
+<main>
+	<h3>ユーザー登録が完了しました。</h3>
+	<p><a id="signInbtn" href="../signIn.php">Sign In</a></p>
+</main>
 
 <footer>
-
-@yield('addFooterDiv')
-
 	<div id="footer_nav">
 	<div class="container">
 		<div id="footer_nav_logo">

@@ -62,4 +62,7 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    protected $redirectPath = '/books/1';
+    // 無造作に他の関数とは独立させて設置させると作動する。
 }
