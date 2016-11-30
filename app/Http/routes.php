@@ -13,19 +13,25 @@
 
 Route::get('/', 'BooksController@index');
 
-// 追加
-Route::get('/books/add', 'BooksController@add');
-Route::post('/books/create', 'BooksController@create');
-
 // 表示
 Route::get('/books/{id}', 'BooksController@show');
 
-// 編集
-Route::get('/books/edit/{id}', 'BooksController@edit');
-Route::post('/books/update/{id}', 'BooksController@update');
 
-// 削除
-Route::get('/books/delete', 'BooksController@delete');
+// User 定義
+
+Route::group(['middleware' => 'auth'], function() {
+
+	// 追加 add にてバグ発生中
+	Route::get('/books/add/{id}', 'BooksController@add');
+	Route::post('/books/create', 'BooksController@create');
+
+	// 編集
+	Route::get('/books/edit/{id}', 'BooksController@edit');
+	Route::post('/books/update/{id}', 'BooksController@update');
+
+	// 削除
+	Route::get('/books/delete', 'BooksController@delete');
+});
 
 // 認証のルート定義…
 Route::get('/auth/login', 'Auth\AuthController@getLogin');
