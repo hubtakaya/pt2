@@ -21,9 +21,19 @@
 	<div id="{{{ isset($nav) ? $nav : 'other_nav' }}}" class="clearfix">
 		<div id="nav_msg">
 		<ul>
-			<li><a href="http://localhost:81/pt2/auth/login">■ログイン</a></li>
+			@if (Auth::guest())
+				<li><a href="http://localhost:81/pt2/auth/login">■ログイン</a></li>
+			@else
+				<li><a href="MyPage.php"><div id="icon_pro"></div></a></li>
+				<li><a href="http://localhost:81/pt2/books/add/1">■Add!</a></li>
+			@endif
+
 			<li><a href="#">■本を探す</a></li>
 			<li><a href="http://localhost:81/pt2">■ホームに戻る</a></li>
+
+			@if (Auth::check())
+				<li><a href="http://localhost:81/pt2/auth/logout">■ログアウト</a></li>
+			@endif
 		</ul>
 		</div><!-- #nav_msg -->
 	</div><!-- /.other_nav -->
