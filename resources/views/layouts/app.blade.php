@@ -62,9 +62,9 @@
 		</div>
 		<div id="footer_nav_nav">
 			<ul>
-				<li><a href="#">ホーム</a></li>
+				<li><a href="http://localhost:81/pt2">ホーム</a></li>
 				<li><a href="#">書籍一覧</a></li>
-				<li><a href="#">運営者情報</a></li>
+				<li><a href="http://localhost:81/pt2#footer_info">運営者情報</a></li>
 				<li><a href="#">お問い合わせ</a></li>
 			</ul>
 		</div>
