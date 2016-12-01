@@ -31,6 +31,10 @@ Route::group(['middleware' => 'auth'], function() {
 
 	// 削除
 	Route::get('/books/delete', 'BooksController@delete');
+
+
+	Route::get('/books/delete', 'BooksController@delete');
+
 });
 
 // 認証のルート定義…
