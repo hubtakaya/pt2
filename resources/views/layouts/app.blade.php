@@ -24,7 +24,11 @@
 			@if (Auth::guest())
 				<li><a href="http://localhost:81/pt2/auth/login">■ログイン</a></li>
 			@else
-				<li><a href="MyPage.php"><div id="icon_pro"></div></a></li>
+				<li>
+					<a href="http://localhost:81/pt2/my-page">
+						<div id="icon_pro"></div>
+					</a>
+				</li>
 				<li><a href="http://localhost:81/pt2/books/add/1">■Add!</a></li>
 			@endif
 

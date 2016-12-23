@@ -39,9 +39,10 @@ class BooksController extends Controller
     		->with(['pageTitle' => 'Adding Books', 'pageLabel' => 'Books 追加']);
     }
 
-    public function create(Request $request) {
+    public function create($user_id, Request $request) {
 
     	$this->validate($request, [
+            'user_id' => 'required',
     		'title' => 'required',
     		'intro' => 'required',
     		// pic も必須項目にしたい。

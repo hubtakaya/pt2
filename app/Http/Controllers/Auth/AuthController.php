@@ -63,6 +63,6 @@ class AuthController extends Controller
         ]);
     }
 
-    protected $redirectPath = '/books/1';
+    protected $redirectPath = '/my-page';
     // 無造作に他の関数とは独立させて設置させると作動する。
 }
