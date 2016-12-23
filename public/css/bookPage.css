@@ -312,7 +312,7 @@ div img {
 	width: 100%;
 	max-width: 240px;
 	height: 100%;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 
 div#book_msg {

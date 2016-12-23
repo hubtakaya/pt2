@@ -19,22 +19,17 @@ Route::get('/books/{id}', 'BooksController@show');
 
 // User 定義
 
-Route::group(['middleware' => 'auth'], function() {
+Route::group(['middleware' => 'auth', 'prefix' => 'books'], function() {
 
-	// 追加 add にてバグ発生中
-	Route::get('/books/add/{id}', 'BooksController@add');
-	Route::post('/books/create', 'BooksController@create');
+	Route::get('/add/{id}', 'BooksController@add');
+	Route::post('/create/{use_id}', 'BooksController@create');
 
 	// 編集
-	Route::get('/books/edit/{id}', 'BooksController@edit');
-	Route::post('/books/update/{id}', 'BooksController@update');
+	Route::get('/edit/{id}', 'BooksController@edit');
+	Route::post('/update/{id}', 'BooksController@update');
 
 	// 削除
-	Route::get('/books/delete', 'BooksController@delete');
-
-
-	Route::get('/books/delete', 'BooksController@delete');
-
+	Route::get('/delete', 'BooksController@delete');
 });
 
 // 認証のルート定義…
@@ -45,3 +40,8 @@ Route::get('/auth/logout', 'Auth\AuthController@getLogout');
 // 登録のルート定義…
 Route::get('/auth/register', 'Auth\AuthController@getRegister');
 Route::post('/auth/register', 'Auth\AuthController@postRegister');
+
+Route::group(['middleware' => 'auth', 'prefix' => 'my-page'], function() {
+	Route::get('/', 'UserController@edit');
+	Route::post('/update/{id}', 'UserController@update');
+});

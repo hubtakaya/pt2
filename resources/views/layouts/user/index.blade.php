@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('addCSS')
 	<link rel="stylesheet" href="http://localhost:81/pt2/css/base.css" media="all">
+	<link rel="stylesheet" href="http://localhost:81/pt2/css/MyPage.css" media="all">
 @endsection
 @section('content')
 
@@ -25,44 +26,45 @@
 <div id="form">
 	<h3>マイページ</h3>
 
-<form action="" type="post">
+{!! Form::open(['url' => ['my-page/update', Auth::user()->id], 'files' => true]) !!}
 <table>
 <tbody>
 	<tr>
-		<th>氏</th>
-		<td><input name="ID" type="text"></td>
-	</tr>
-	<tr>
-	<tr>
-		<th>名</th>
-		<td><input name="ID" type="text"></td>
-	</tr>
-	<tr>
-	<tr>
 		<th>User Name</th>
-		<td><input name="ID" type="text"></td>
+		<td>
+			{!! Form::text('name', isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email) !!}
+		</td>
 	</tr>
 	<tr>
-	<tr>
-		<th>User ID</th>
-		<td><input name="ID" type="text"></td>
+		<th>Email</th>
+		<td>
+			{!! Form::email('email', Auth::user()->email ) !!}
+		</td>
 	</tr>
 	<tr>
 		<th>Password</th>
-		<td><input name="password" type="password"></td>
+		<td>
+			{!! Form::password('password') !!}
+		</td>
 	</tr>
 	<tr>
 		<th>New Password</th>
-		<td><input name="password" type="password"></td>
+		<td>
+			{!! Form::password('passwordNew') !!}
+		</td>
 	</tr>
 	<tr>
 		<th>New Password （確認）</th>
-		<td><input name="password" type="password"></td>
+		<td>
+			{!! Form::password('passwordNewConfirm') !!}
+		</td>
 	</tr>
 </tbody>
 </table>
-	<p><input type="submit" value="Save" id="formbtn"></p>
-</form><!-- #signin -->
+	<p>
+		{!! Form::submit('Save', ['id' => 'formbtn']) !!}
+	</p>
+{!! Form::close() !!}
 </div><!-- #form -->
 </main>
 
