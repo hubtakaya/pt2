@@ -10,6 +10,11 @@ use App\Http\Controllers\Controller;
 // モデルの宣言
 use App\Book;
 
+// Carbon 宣言
+use Carbon\Carbon;
+
+// use App\Carbon;
+
 class BooksController extends Controller
 {
     // 一覧
@@ -54,7 +59,7 @@ class BooksController extends Controller
 
     	// 一覧画面へリダイレクト
     	\Session::flash('flash_message', 'Book successfully added!');
-    	return redirect('/');
+    	return redirect('/books/edit/' . $this->id);
     }
 
 
@@ -78,11 +83,13 @@ class BooksController extends Controller
 		]);
 
     	// 既存データ1件更新
-		$book->fill($request->all())->save();
+		$book->fill($request->all());
+        $book->updated_at = Carbon::now();
+        $book->save();
 
 		// 一覧画面へリダイレクト
 		\Session::flash('flash_message', 'Book successfully edited!');
-		return redirect('/');
+		return redirect('/books/edit/' . $book->id);
     }
 
     // 削除

@@ -10,6 +10,9 @@ use App\Http\Controllers\Controller;
 // モデルの宣言
 use App\User;
 
+// Carbon
+use Carbon\Carbon;
+
 class UserController extends Controller
 {
     /**
@@ -82,6 +85,8 @@ class UserController extends Controller
         // 値を代入
         $user->name = $request->name;
         $user->email = $request->email;
+
+        $user->updated_at = Carbon::now();
         // 保存(更新)
         $user->save();
         // リダイレクト

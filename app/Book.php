@@ -7,11 +7,14 @@ use Codesleeve\Stapler\ORM\EloquentTrait;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Book extends Model implements StaplerableInterface
 {
     // Stapler の読み込み
     use EloquentTrait;
 
+    // Carbon
+    protected $dates = ['created_at', 'updated_at'];
 
     // mysql に埋め込む値を選ぶ
     // view 側のinput[name] に対応する値をfillable に設定する。
