@@ -1,0 +1,7 @@
+▼view
+・books/edit/ 画面にて、既存の画像編集もできないか？？
+> Laravel Stapler のライブラリを参照すればできそう。
+
+・show 画面にてauthor, intro の双方を設定していく。
+
+
