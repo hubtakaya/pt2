@@ -24,7 +24,11 @@
 			@if (Auth::guest())
 				<li><a href="http://localhost:81/pt2/auth/login">■ログイン</a></li>
 			@else
-				<li><a href="MyPage.php"><div id="icon_pro"></div></a></li>
+				<li>
+					<a href="http://localhost:81/pt2/my-page">
+						<div id="icon_pro"></div>
+					</a>
+				</li>
 				<li><a href="http://localhost:81/pt2/books/add/1">■Add!</a></li>
 			@endif
 
@@ -62,9 +66,9 @@
 		</div>
 		<div id="footer_nav_nav">
 			<ul>
-				<li><a href="#">ホーム</a></li>
+				<li><a href="http://localhost:81/pt2">ホーム</a></li>
 				<li><a href="#">書籍一覧</a></li>
-				<li><a href="#">運営者情報</a></li>
+				<li><a href="http://localhost:81/pt2#footer_info">運営者情報</a></li>
 				<li><a href="#">お問い合わせ</a></li>
 			</ul>
 		</div>

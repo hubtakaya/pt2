@@ -35,12 +35,18 @@
 			{!! Form::textarea('intro', $book->intro) !!}
 		</td>
 	</tr>
-<!-- 	<tr>
+	<tr>
 		<th>Picture</th>
 		<td>
 			{!! Form::file('pic', null) !!}
 		</td>
-	</tr> -->
+	</tr>
+	<tr class="hide">
+		<th>Modify</th>
+		<td>
+			{!! Form::file('picv', null) !!}
+		</td>
+	</tr>
 </tbody>
 </table>
 	<p>{!! Form::submit('Save', ['id' => 'formbtn']) !!}</p>

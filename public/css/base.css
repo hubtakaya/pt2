@@ -105,6 +105,10 @@ body {
 	background-color: #ffefd5;
 }
 
+.hide {
+	display: none;
+}
+
 /*
 =========================================
 	Modules（Block）
