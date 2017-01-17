@@ -152,10 +152,9 @@ header #other_nav {
 	margin-right: 10px;
 }
 
-#icon_pro {
+#icon_pro img {
 	width: 30px;
 	height: 30px;
-	background-color: black;
 	border-radius: 50%;
 }
 

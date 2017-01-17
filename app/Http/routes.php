@@ -16,13 +16,12 @@ Route::get('/', 'BooksController@index');
 // 表示
 Route::get('/books/{id}', 'BooksController@show');
 
-
 // User 定義
 
 Route::group(['middleware' => 'auth', 'prefix' => 'books'], function() {
 
 	Route::get('/add/{id}', 'BooksController@add');
-	Route::post('/create/{use_id}', 'BooksController@create');
+	Route::post('/create/{user_id}', 'BooksController@create');
 
 	// 編集
 	Route::get('/edit/{id}', 'BooksController@edit');

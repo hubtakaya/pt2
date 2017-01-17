@@ -9,9 +9,10 @@ use App\Http\Controllers\Controller;
 
 // モデルの宣言
 use App\User;
-
-// Carbon
 use Carbon\Carbon;
+use Auth;
+use Image;
+use File;
 
 class UserController extends Controller
 {
@@ -87,8 +88,31 @@ class UserController extends Controller
         $user->email = $request->email;
 
         $user->updated_at = Carbon::now();
-        // 保存(更新)
-        $user->save();
+
+        // image
+        if($request->hasFile('avatar')){
+
+            if($user->avatar != 'default.jpg'){
+                $pathToImage = public_path('uploads/avatars/' . $user->avatar);
+                File::delete($pathToImage);
+            }
+
+            $avatar = $request->file('avatar');
+            $filename = time() . '.' . $avatar->getClientOriginalExtension();
+
+            // user にて保存が完了してからavatar の保存に移る。
+            $user->avatar = $filename;
+            $user->save();
+            Image::make($avatar)
+                ->fit(300, 300, function($constraint){$constraint->upsize();})
+                ->save(public_path('uploads/avatars/' . $filename));
+
+        } else {
+
+            $user->save();
+
+        }
+
         // リダイレクト
         return redirect()->to('/my-page');
     }

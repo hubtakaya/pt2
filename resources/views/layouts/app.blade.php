@@ -26,7 +26,10 @@
 			@else
 				<li>
 					<a href="http://localhost:81/pt2/my-page">
-						<div id="icon_pro"></div>
+						<div id="icon_pro">
+							<!-- <img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}"> -->
+							<img src="uploads\avatars\{{ Auth::user()->avatar }}">
+						</div>
 					</a>
 				</li>
 				<li><a href="http://localhost:81/pt2/books/add/1">■Add!</a></li>
