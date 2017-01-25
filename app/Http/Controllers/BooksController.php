@@ -44,7 +44,7 @@ class BooksController extends Controller
     		->with(['pageTitle' => 'Adding Books', 'pageLabel' => 'Books 追加']);
     }
 
-    public function create($user_id, Request $request) {
+    public function create(Request $request) {
 
     	$this->validate($request, [
             'user_id' => 'required',
@@ -59,7 +59,7 @@ class BooksController extends Controller
 
     	// 一覧画面へリダイレクト
     	\Session::flash('flash_message', 'Book successfully added!');
-    	return redirect('/books/edit/' . $this->id);
+    	return redirect('/books/edit/' . Book::id()->where('title', $request->title));
     }
 
 

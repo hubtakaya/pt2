@@ -20,7 +20,7 @@
 <div id="form">
 	<h3>Book の情報</h3>
 
-{!! Form::open(['url' => ['books/create/', Auth::user()->id ], 'files' => true]) !!}
+{!! Form::open(['url' => 'books/create/', 'files' => true]) !!}
 <table>
 <tbody>
 	<tr>
@@ -39,6 +39,12 @@
 		<th>Picture(必須)</th>
 		<td>
 			{!! Form::file('pic', null) !!}
+		</td>
+	</tr>
+	<tr class="hide">
+		<th>user_id</th>
+		<td>
+			{!! Form::text('user_id', Auth::user()->id) !!}
 		</td>
 	</tr>
 </tbody>

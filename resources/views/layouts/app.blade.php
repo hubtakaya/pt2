@@ -27,8 +27,13 @@
 				<li>
 					<a href="http://localhost:81/pt2/my-page">
 						<div id="icon_pro">
-							<!-- <img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}"> -->
-							<img src="uploads\avatars\{{ Auth::user()->avatar }}">
+
+							<!--
+								<img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}">
+							-->
+
+							<img src="http://localhost:81/pt2/uploads/avatars/{{ Auth::user()->avatar }}">
+
 						</div>
 					</a>
 				</li>

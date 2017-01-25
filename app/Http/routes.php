@@ -21,7 +21,7 @@ Route::get('/books/{id}', 'BooksController@show');
 Route::group(['middleware' => 'auth', 'prefix' => 'books'], function() {
 
 	Route::get('/add/{id}', 'BooksController@add');
-	Route::post('/create/{user_id}', 'BooksController@create');
+	Route::post('/create', 'BooksController@create');
 
 	// 編集
 	Route::get('/edit/{id}', 'BooksController@edit');
@@ -29,6 +29,10 @@ Route::group(['middleware' => 'auth', 'prefix' => 'books'], function() {
 
 	// 削除
 	Route::get('/delete', 'BooksController@delete');
+
+	// コメント
+	Route::post('/books/{book_id}/{user_id}/comments', 'CommentsController@store');
+
 });
 
 // 認証のルート定義…

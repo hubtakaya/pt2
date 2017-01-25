@@ -20,6 +20,10 @@ class Book extends Model implements StaplerableInterface
     // view 側のinput[name] に対応する値をfillable に設定する。
     protected $fillable = array ('user_id', 'title', 'intro', 'created', 'pic');
 
+    public function comments(){
+    	return $this->hasMany('App\Comment');
+    }
+
     public function __construct(array $attributes = array()) {
 
 		//画像の投稿設定
