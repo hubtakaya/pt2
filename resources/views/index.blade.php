@@ -17,9 +17,9 @@
 	<div id="gnav">
 	<div class="container">
 		<ul>
-			<li><a href="#">ホーム</a></li>
-			<li><a href="#">書籍一覧</a></li>
-			<li><a href="#">運営者情報</a></li>
+			<li><a href="http://localhost:81/pt2">ホーム</a></li>
+			<li><a href="http://localhost:81/pt2/books">書籍一覧</a></li>
+			<li><a href="http://localhost:81/pt2#footer_info">運営者情報</a></li>
 			<li><a href="#">お問い合わせ</a></li>
 		</ul>
 	</div><!-- /.container -->
@@ -65,7 +65,7 @@
 	<div class="h2">
 		<h2>新着の本</h2>
 		<p>新しくレビューされたり、コメントが集まっている本を一部紹介しています。</p>
-		<p class="right"><b><a href="#">本の一覧はこちら</a></b></p>
+		<p class="right"><b><a href="http://localhost:81/pt2/books">本の一覧はこちら</a></b></p>
 	</div>
 
 	<div id="gross_list">

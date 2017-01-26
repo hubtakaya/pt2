@@ -15,6 +15,7 @@ Route::get('/', 'BooksController@index');
 
 // 表示
 Route::get('/books/{id}', 'BooksController@show');
+Route::get('/books', 'BooksController@page');
 
 // User 定義
 

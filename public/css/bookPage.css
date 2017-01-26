@@ -51,7 +51,7 @@ article#book {
 	}
 	div#book_img,
 	div#book_msg {
-
+		height: 130px;
 	}
 }
 
@@ -118,8 +118,85 @@ div.msg {
 	box-sizing: border-box;
 }
 
+/*20170125 追記*/
+div#content {
+	display: block;
+	padding: 5px;
+	position: relative;
+	background: #ffefd5;
+	border: 1.5px solid #70996a;
+}
+div#content p:after, div#content:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+div#content:after {
+	border-color: rgba(245, 222, 179, 0);
+	border-right-color: #ffefd5;
+	border-width: 7px;
+	margin-top: -7px;
+}
+div#content:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: #006638;
+	border-width: 8px;
+	margin-top: -8px;
+}
+
 div.icon p {
 	text-align: center;
+}
+
+p#content_body {
+	margin: 0;
+	padding: 0 0 3px 0;
+	border-bottom: 1px dotted #70996a;
+}
+
+p#content_time {
+	font-size: 12px;
+	margin: 0;
+	text-align: right;
+}
+
+form#comment_form textarea{
+	width: 90%;
+	padding: 3px 5px;
+	margin: 0 auto;
+	margin-bottom: 20px; 
+	border-radius: 3px;
+}
+
+@media screen and (min-width: 940px){
+	div.comment {
+		height: 136px;
+	}
+
+	div.icon {
+		width: 120px;
+		height: 136px;
+	}
+
+	div.msg {
+		height: 136px;
+	}
+
+	div.icon img {
+		width: 80px;
+		height: 80px;
+		margin: 20px 20px 5px
+	}
+
+	div.msg p {
+		margin-top: 20px;
+	}
 }
 
 /*footer

@@ -419,7 +419,7 @@ div.button {
 
 /* myPage
 --------------------*/
-h3 {
+h3, h3 a {
 	text-align: center;
 	color: #544745;
 	font-size: 24px;
@@ -787,4 +787,38 @@ div#error {
 div#error li {
 	color: #D8000C;
 	text-align: left;
+}
+
+
+div.tc {
+	text-align: center;
+}
+
+ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 20px 0 30px;
+}
+
+ul.pagination li {
+	display: inline;
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+ul.pagination li a, ul.pagination li.disabled, ul.pagination li.active {
+	display: inline-block;
+	padding: 8px 16px;
+	margin-right: 3px;
+	border-radius: 3px;
+	color: #544745;
+	border: 1px solid #ddd;
+}
+
+ul.pagination a:hover:not(.active), ul.pagination li.disabled:hover {
+	background-color: #ddd;
+}
+
+ul.pagination li.active {
+	background-color: #e59e33;
 }

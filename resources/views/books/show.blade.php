@@ -25,21 +25,29 @@
 <article id="comment">
 	<h2>Comments</h2>
 
-	@forelse($book->comments as $comment)
+	@forelse($comments as $comment)
 		<div class="comment clearfix">
 			<div class="icon">
 				<img src="http://localhost:81/pt2/uploads/avatars/{{ isset(App\User::find( $comment->user_id )->avatar) ? App\User::find( $comment->user_id )->avatar : 'default.jpg' }}">
 				<p class="username">{{ isset(App\User::find( $comment->user_id )->name) ? App\User::find( $comment->user_id )->name : 'Not Found' }}</p>
 			</div><!-- /.icon -->
 			<div class="msg">
-				<p>{{ $comment->body }}</p>
+				<div id="content">
+					<p id="content_body">{{ $comment->body }}</p>
+					<p id="content_time">{{ $comment->created_at }}</p>
+				</div>
 			</div><!-- /.msg -->
 		</div><!-- /.comment -->
 	@empty
 		<p>Not yet</p>
 	@endforelse
 
+	<div class="tc">
+		{!! $comments->render() !!}
+	</div>
+
 </article><!-- /#comment -->
+
 
 </div><!-- /.container -->
 
@@ -62,19 +70,15 @@
 {!! Form::close() !!}
  -->
 
-<form method="post" action="{{ action('CommentsController@store', [$book->id, Auth::user()->id]) }}">
-{{ csrf_field() }}
-<table>
-<tbody>
-	<tr class="textarea">
-		<th>コメント</th>
-		<td>
-			<textarea name="body">{{ old('body') }}</textarea>
-		</td>
-	</tr>
-</tbody>
-</table>
-	<p><input id="formbtn" type="submit" value="Send"></p>
-</form>
+@if (Auth::check())
+	<div class="container">
+	<form method="post" action="{{ action('CommentsController@store', [$book->id, Auth::user()->id]) }}" id="comment_form">
+	{{ csrf_field() }}
+		<textarea name="body" rows=3>{{ old('body') }}</textarea>
+		<p><input id="formbtn" type="submit" value="Comment"></p>
+	</form>
+	</div>
+@else
+@endif
 
 @endsection

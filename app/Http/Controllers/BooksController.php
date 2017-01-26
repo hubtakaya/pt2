@@ -9,11 +9,10 @@ use App\Http\Controllers\Controller;
 
 // モデルの宣言
 use App\Book;
+use App\Comment;
 
 // Carbon 宣言
 use Carbon\Carbon;
-
-// use App\Carbon;
 
 class BooksController extends Controller
 {
@@ -23,8 +22,19 @@ class BooksController extends Controller
     	// Books テーブルのデータをすべて取得する
     	$books = Book::all();
     	return view('index', compact('books'))
-        ->with(['nav' => 'top_nav',
-                'headerFalse' => 'true']);
+            ->with(['nav' => 'top_nav',
+                    'headerFalse' => 'true'
+            ]
+        );
+    }
+
+    public function page() {
+        $books = Book::paginate(1);
+        return view('books.pages', compact('books'))
+            ->with(['pageTitle' => '推薦図書一覧',
+                    'pageLabel' => '推薦図書一覧'
+            ]
+        );
     }
 
     // 表示
@@ -32,9 +42,13 @@ class BooksController extends Controller
 
     	// Books テーブルのデータをすべて取得する
     	$book = Book::findOrFail($id);
-    	return view('books.show', compact('book'))
-    		->with(['pageTitle' => '『' . $book->title . '』',
-                'pageLabel' => $book->title]);
+        // $comments = Comment::$book->comments->sortByDesc('id');
+        $comments = Comment::query()->where('book_id', $book->id)->orderBy('id', 'desc')->paginate(5);
+    	return view('books.show', compact('book', 'comments'))
+    		->with([
+                'pageTitle' => '『' . $book->title . '』',
+                'pageLabel' => $book->title
+            ]);
     }
 
     // 追加
