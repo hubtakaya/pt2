@@ -10,45 +10,66 @@
 		同じく読んだことがある人と意見を交換するも良し、
 		新しく読む本を見つけるきっかけにするも良しのサイトです。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://localhost:81/pt2/js/jquery.js"></script>
+	<script src="http://localhost:81/pt2/js/iscroll.js"></script>
+
+	<link rel="stylesheet" href="http://localhost:81/pt2/css/drawer.min.css">
+	<script src="http://localhost:81/pt2/js/drawer.min.js"></script>
+	<script src="http://localhost:81/pt2/js/customized.js"></script>
+
+	<link rel="stylesheet" href="http://localhost:81/pt2/css/font-awesome.css">
 
 	<!-- stylesheet -->
 	@yield('addCSS')
 </head>
 
-<body>
+<body class="drawer drawer--left">
 
 <header>
 	<div id="{{{ isset($nav) ? $nav : 'other_nav' }}}" class="clearfix">
-		<div id="nav_msg">
-		<ul>
-			@if (Auth::guest())
-				<li><a href="http://localhost:81/pt2/auth/login">■ログイン</a></li>
-			@else
-				<li>
-					<a href="http://localhost:81/pt2/my-page">
-						<div id="icon_pro">
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">menu</span>
+			<span class="drawer-hamburger-icon"></span>
+		</button>
+		<nav class="drawer-nav">
+			<ul class="drawer-menu">
+				@if (Auth::guest())
+					<li>
+							<p id="guest">ゲストさん、こんにちは。</p>
+					</li>
+					<li>
+						<a href="http://localhost:81/pt2/auth/login"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
+					</li>
+				@else
+					<li>
+						<a href="http://localhost:81/pt2/my-page">
+							<div id="icon_pro">
 
-							<!--
-								<img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}">
-							-->
+								<!--
+									<img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}">
+								-->
 
-							<img src="http://localhost:81/pt2/uploads/avatars/{{ Auth::user()->avatar }}">
+								<img src="http://localhost:81/pt2/uploads/avatars/{{ Auth::user()->avatar }}">
+								<p>{{ Auth::user()->name }} さん</p>
 
-						</div>
-					</a>
-				</li>
-				<li><a href="http://localhost:81/pt2/books/add/1">■Add!</a></li>
-			@endif
+							</div>
+						</a>
+					</li>
+				@endif
 
-			<li><a href="#">■本を探す</a></li>
-			<li><a href="http://localhost:81/pt2">■ホームに戻る</a></li>
+				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>本を探す (準備中)</a></li>
+				<li><a href="http://localhost:81/pt2"><i class="fa fa-home" aria-hidden="true"></i>ホームに戻る</a></li>
 
-			@if (Auth::check())
-				<li><a href="http://localhost:81/pt2/auth/logout">■ログアウト</a></li>
-			@endif
-		</ul>
-		</div><!-- #nav_msg -->
-	</div><!-- /.other_nav -->
+				@if (Auth::check())
+					<li><a href="http://localhost:81/pt2/auth/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
+				@endif
+
+				<li><a id="back" href="#"><i class="fa fa-times" aria-hidden="true"></i>メニューを閉じる</a></li>
+			</ul>
+		</nav>
+	</div>
+
+<div id="space"></div>
 
 @if (!isset($headerFalse))
 	<div id="header_MyPage">

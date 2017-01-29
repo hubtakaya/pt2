@@ -14,7 +14,7 @@
 @endsection
 @section('content')
 
-	<div id="gnav">
+<!--	<div id="gnav">
 	<div class="container">
 		<ul>
 			<li><a href="http://localhost:81/pt2">ホーム</a></li>
@@ -24,6 +24,7 @@
 		</ul>
 	</div><!-- /.container -->
 	</div><!-- /#gnav -->
+-->
 
 @if ($errors->any())
 	<div class="container">
