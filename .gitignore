@@ -3,3 +3,8 @@
 Homestead.yaml
 Homestead.json
 .env
+/remedy
+/app/RealModel
+/app/createmodel
+/public/book_list
+/resources/views/moving

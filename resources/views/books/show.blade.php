@@ -39,7 +39,7 @@
 			</div><!-- /.msg -->
 		</div><!-- /.comment -->
 	@empty
-		<p>Not yet</p>
+		<p>Nobody commented.</p>
 	@endforelse
 
 	<div class="tc">

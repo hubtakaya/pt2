@@ -49,13 +49,29 @@
 									<img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}">
 								-->
 
-								<img src="http://localhost:81/pt2/uploads/avatars/{{ Auth::user()->avatar }}">
-								<p>{{ Auth::user()->name }} さん</p>
+								<!--
+									<img src="http://localhost:81/pt2/uploads/avatars/{{ Auth::user()->avatar }}">
+								-->
+
+								<img src="http://localhost:81/pt2/uploads/avatars/{{ DB::table('users')->where('id', Auth::id())->value('avatar') }}">
+
+								<!--
+									<p>{{ Auth::user()->name }} さん</p>
+								-->
+
+								<p>{{ DB::table('users')->where('id', Auth::id())->value('name') }} さん</p>
 
 							</div>
 						</a>
 					</li>
+					<li>
+						<a href="http://localhost:81/pt2/books/add/1">
+								<i class="fa fa-cloud-upload" aria-hidden="true"></i>本を紹介する
+						</a>
+					</li>
+
 				@endif
+				<li><a href="http://localhost:81/pt2/books"><i class="fa fa-book" aria-hidden="true"></i>推薦図書一覧</a></li>
 
 				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>本を探す (準備中)</a></li>
 				<li><a href="http://localhost:81/pt2"><i class="fa fa-home" aria-hidden="true"></i>ホームに戻る</a></li>

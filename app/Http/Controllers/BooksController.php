@@ -10,9 +10,13 @@ use App\Http\Controllers\Controller;
 // モデルの宣言
 use App\Book;
 use App\Comment;
+use Auth;
 
 // Carbon 宣言
 use Carbon\Carbon;
+
+// DB ファサード
+use DB;
 
 class BooksController extends Controller
 {
@@ -29,7 +33,7 @@ class BooksController extends Controller
     }
 
     public function page() {
-        $books = Book::paginate(1);
+        $books = Book::paginate(9);
         return view('books.pages', compact('books'))
             ->with(['pageTitle' => '推薦図書一覧',
                     'pageLabel' => '推薦図書一覧'
@@ -73,7 +77,7 @@ class BooksController extends Controller
 
     	// 一覧画面へリダイレクト
     	\Session::flash('flash_message', 'Book successfully added!');
-    	return redirect('/books/edit/' . Book::id()->where('title', $request->title));
+        return redirect('/books/edit/' . DB::getPdo()->lastInsertId());
     }
 
 
@@ -81,8 +85,17 @@ class BooksController extends Controller
     public function edit($id) {
     	// $id に該当するデータ1件取得する
     	$book = Book::findOrFail($id);
-    	return view('books.edit', compact('book'))
-    		->with(['pageTitle' => 'Editting Books', 'pageLabel' => 'Books 編集']);
+
+        // edit ユーザーがauthor であるか判別する。
+        if($book->user_id == Auth::user()->id)
+        {
+        	return view('books.edit', compact('book'))
+        		->with(['pageTitle' => 'Editting Books', 'pageLabel' => 'Books 編集']);
+        }
+        else
+        {
+            return redirect('/');
+        }
     }
 
     public function update($id, Request $request) {
