@@ -7,4 +7,5 @@ Homestead.json
 /app/RealModel
 /app/createmodel
 /public/book_list
+/public/uploads
 /resources/views/moving
