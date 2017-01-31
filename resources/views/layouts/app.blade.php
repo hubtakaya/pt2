@@ -10,14 +10,14 @@
 		同じく読んだことがある人と意見を交換するも良し、
 		新しく読む本を見つけるきっかけにするも良しのサイトです。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="/js/jquery.js"></script>
-	<script src="/js/iscroll.js"></script>
+	<script src="{{ public_path() }}/js/jquery.js"></script>
+	<script src="{{ public_path() }}/js/iscroll.js"></script>
 
-	<link rel="shortcut icon" href="/favicon.png" />
-	<link rel="stylesheet" href="/css/drawer.min.css">
-	<script src="js/drawer.min.js"></script>
-	<script src="js/customized.js"></script>
-	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="shortcut icon" href="{{ public_path() }}/favicon.png" />
+	<link rel="stylesheet" href="{{ public_path() }}/css/drawer.min.css">
+	<script src="{{ public_path() }}/js/drawer.min.js"></script>
+	<script src="{{ public_path() }}/js/customized.js"></script>
+	<link rel="stylesheet" href="{{ public_path() }}/css/font-awesome.css">
 
 	@yield('addCSS')
 </head>
@@ -37,46 +37,33 @@
 							<p id="guest">ゲストさん、こんにちは。</p>
 					</li>
 					<li>
-						<a href="http://localhost:81/pt2/auth/login"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
+						<a href="{{ public_path() }}/login"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
 					</li>
 				@else
 					<li>
-						<a href="http://localhost:81/pt2/my-page">
+						<a href="{{ public_path() }}/my-page">
 							<div id="icon_pro">
 
-								<!--
-									<img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}">
-								-->
-
-								<!--
-									<img src="http://localhost:81/pt2/uploads/avatars/{{ Auth::user()->avatar }}">
-								-->
-
-								<img src="http://localhost:81/pt2/uploads/avatars/{{ DB::table('users')->where('id', Auth::id())->value('avatar') }}">
-
-								<!--
-									<p>{{ Auth::user()->name }} さん</p>
-								-->
-
+								<img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}">
 								<p>{{ DB::table('users')->where('id', Auth::id())->value('name') }} さん</p>
 
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="http://localhost:81/pt2/books/add/1">
+						<a href="{{ public_path() }}/books/add/1">
 								<i class="fa fa-cloud-upload" aria-hidden="true"></i>本を紹介する
 						</a>
 					</li>
 
 				@endif
-				<li><a href="http://suisen-book.com/books"><i class="fa fa-book" aria-hidden="true"></i>推薦図書一覧</a></li>
+				<li><a href="{{ public_path() }}/books"><i class="fa fa-book" aria-hidden="true"></i>推薦図書一覧</a></li>
 
 				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>本を探す (準備中)</a></li>
-				<li><a href="http://localhost:81/pt2"><i class="fa fa-home" aria-hidden="true"></i>ホームに戻る</a></li>
+				<li><a href="{{ public_path() }}"><i class="fa fa-home" aria-hidden="true"></i>ホームに戻る</a></li>
 
 				@if (Auth::check())
-					<li><a href="http://localhost:81/pt2/auth/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
+					<li><a href="{{ public_path() }}/auth/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
 				@endif
 
 				<li><a id="back" href="#"><i class="fa fa-times" aria-hidden="true"></i>メニューを閉じる</a></li>
@@ -106,13 +93,13 @@
 	<div id="footer_nav">
 	<div class="container">
 		<div id="footer_nav_logo">
-			<h3><a href="http://localhost:81/pt2">推薦図書.com</a></h3>
+			<h3><a href="{{ public_path() }}">推薦図書.com</a></h3>
 		</div>
 		<div id="footer_nav_nav">
 			<ul>
-				<li><a href="http://localhost:81/pt2">ホーム</a></li>
-				<li><a href="http://localhost:81/pt2/books">書籍一覧</a></li>
-				<li><a href="http://localhost:81/pt2#footer_info">運営者情報</a></li>
+				<li><a href="{{ public_path() }}">ホーム</a></li>
+				<li><a href="{{ public_path() }}/books">書籍一覧</a></li>
+				<li><a href="{{ public_path() }}#footer_info">運営者情報</a></li>
 				<li><a href="#">お問い合わせ</a></li>
 			</ul>
 		</div>
