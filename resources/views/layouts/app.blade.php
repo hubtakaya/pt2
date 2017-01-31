@@ -19,7 +19,6 @@
 	<script src="js/customized.js"></script>
 	<link rel="stylesheet" href="css/font-awesome.css">
 
-	<!-- stylesheet -->
 	@yield('addCSS')
 </head>
 
