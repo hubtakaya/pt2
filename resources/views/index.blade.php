@@ -14,18 +14,6 @@
 @endsection
 @section('content')
 
-<!--	<div id="gnav">
-	<div class="container">
-		<ul>
-			<li><a href="http://localhost:81/pt2">ホーム</a></li>
-			<li><a href="http://localhost:81/pt2/books">書籍一覧</a></li>
-			<li><a href="http://localhost:81/pt2#footer_info">運営者情報</a></li>
-			<li><a href="#">お問い合わせ</a></li>
-		</ul>
-	</div><!-- /.container -->
-	</div><!-- /#gnav -->
--->
-
 @if ($errors->any())
 	<div class="container">
 	<div id="error">

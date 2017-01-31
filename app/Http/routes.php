@@ -11,7 +11,11 @@
 |
 */
 
+<<<<<<< HEAD
 Route::post('api/github', ['middleware' => 'github.secret.token', 'uses' => 'GithubController@githubUpdate']);
+=======
+//Route::post('api/github', ['middleware' => 'github.secret.token', 'uses' => 'GithubController@githubUpdate']);
+>>>>>>> e1f3d85671978683e2b159b514ae795eb34a2cd8
 
 Route::get('/', 'BooksController@index');
 
