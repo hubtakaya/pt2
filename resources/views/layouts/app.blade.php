@@ -10,8 +10,8 @@
 		同じく読んだことがある人と意見を交換するも良し、
 		新しく読む本を見つけるきっかけにするも良しのサイトです。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/jquery.js"></script>
-	<script src="js/iscroll.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/iscroll.js"></script>
 
 	<link rel="shortcut icon" href="/favicon.png" />
 	<link rel="stylesheet" href="/css/drawer.min.css">
