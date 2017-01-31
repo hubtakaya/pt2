@@ -55,7 +55,7 @@
 
 
 <!--
-{!! Form::open(['url' => ['CommentsController@store', $book->id], 'files' => true]) !!}
+{!! Form::open(['url' => ['Controller@', $book->id], 'files' => true]) !!}
 <table>
 <tbody>
 	<tr class="textarea">

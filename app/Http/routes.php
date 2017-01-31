@@ -11,6 +11,8 @@
 |
 */
 
+Route::post('api/github', ['middleware' => 'github.secret.token', 'uses' => 'GithubController@githubUpdate']);
+
 Route::get('/', 'BooksController@index');
 
 // 表示
