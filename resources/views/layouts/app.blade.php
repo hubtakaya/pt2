@@ -13,11 +13,12 @@
 	<script src="http://localhost:81/pt2/js/jquery.js"></script>
 	<script src="http://localhost:81/pt2/js/iscroll.js"></script>
 
-	<link rel="stylesheet" href="http://localhost:81/pt2/css/drawer.min.css">
-	<script src="http://localhost:81/pt2/js/drawer.min.js"></script>
-	<script src="http://localhost:81/pt2/js/customized.js"></script>
+	<link rel="shortcut icon" href="/favicon.png" />
+	<link rel="stylesheet" href="/css/drawer.min.css">
+	<script src="/js/drawer.min.js"></script>
+	<script src="/js/customized.js"></script>
 
-	<link rel="stylesheet" href="http://localhost:81/pt2/css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 
 	<!-- stylesheet -->
 	@yield('addCSS')
@@ -121,7 +122,7 @@
 	</div>
 	<div id="footer_bottom">
 	<div class="container">
-		<p><small>Copyrights &copy; Cafe Leaf All Rights Reserved.</small></p>
+		<p><small>Copyrights &copy; 推薦図書.com All Rights Reserved.</small></p>
 	</div><!-- /.container -->
 	</div><!-- /#footer_bottom -->
 </footer>
