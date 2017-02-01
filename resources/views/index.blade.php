@@ -61,7 +61,7 @@
 	@foreach($books as $book)
 		<div class="list">
 			<div class="list_image">
-				<img src="http://localhost:81/pt2{{ $book->pic->url('original') }}">
+				<img src="http://suisen-book.com/{{ $book->pic->url('original') }}">
 			</div>
 			<div class="list_msg">
 				<p class="list_text"><b>{{ $book->title }}</b></br>{{ $book->autor }}</p>

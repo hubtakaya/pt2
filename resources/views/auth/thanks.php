@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- stylesheet -->
-	<link rel="stylesheet" href="../css/base.css" media="all">
+	<link rel="stylesheet" href="http://suisen-book.com/css/base.css" media="all">
 </head>
 
 <body>
@@ -45,10 +45,9 @@
 		</div>
 		<div id="footer_nav_nav">
 			<ul>
-				<li><a href="#">ホーム</a></li>
-				<li><a href="#">書籍一覧</a></li>
-				<li><a href="#">運営者情報</a></li>
-				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="http://suisen-book.com">ホーム</a></li>
+				<li><a href="http://suisen-book.com/books">書籍一覧</a></li>
+				<li><a href="http://suisen-book.com/#footer_info">運営者情報</a></li>
 			</ul>
 		</div>
 	</div><!-- /.container -->

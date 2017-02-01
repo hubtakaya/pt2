@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('addCSS')
-	<link rel="stylesheet" href="http://localhost:81/pt2/css/base.css" media="all">
-	<link rel="stylesheet" href="http://localhost:81/pt2/css/MyPage.css" media="all">
+	<link rel="stylesheet" href="http://suisen-book.com/css/base.css" media="all">
+	<link rel="stylesheet" href="http://suisen-book.com/css/MyPage.css" media="all">
 @endsection
 @section('content')
 
