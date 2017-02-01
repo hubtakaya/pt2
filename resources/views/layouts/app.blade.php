@@ -37,7 +37,7 @@
 							<p id="guest">ゲストさん、こんにちは。</p>
 					</li>
 					<li>
-						<a href="{{ public_path() }}/login"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
+						<a href="{{ def_path() }}/auth/login"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
 					</li>
 				@else
 					<li>
