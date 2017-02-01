@@ -355,10 +355,9 @@ main .container{
 
 .list_msg {
 	display: inline-block;
-/*	padding: 15px 3px 0;*/
+	margin-top: 15px;
 	width: 49%;
-	height: 240px;
-	overflow: hidden;
+	max-height: 210px;
 	box-sizing: border-box;
 }
 
