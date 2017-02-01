@@ -77,7 +77,8 @@ class BooksController extends Controller
 
     	// 一覧画面へリダイレクト
     	\Session::flash('flash_message', 'Book successfully added!');
-        return redirect('/books/edit/' . DB::getPdo()->lastInsertId());
+        // return redirect('/books/edit/' . DB::getPdo()->lastInsertId());
+        return redirect('/books');
     }
 
 
@@ -87,7 +88,7 @@ class BooksController extends Controller
     	$book = Book::findOrFail($id);
 
         // edit ユーザーがauthor であるか判別する。
-        if($book->user_id == Auth::user()->id)
+        if($book->user_id == Auth::id())
         {
         	return view('books.edit', compact('book'))
         		->with(['pageTitle' => 'Editting Books', 'pageLabel' => 'Books 編集']);

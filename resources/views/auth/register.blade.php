@@ -38,7 +38,7 @@
 		<td><input name="password" type="password"></td>
 	</tr>
 	<tr>
-		<th>New Password （確認）</th>
+		<th>Password （確認）</th>
 		<td><input name="password_confirmation" type="password"></td>
 	</tr>
 </tbody>

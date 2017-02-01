@@ -51,4 +51,7 @@ Route::post('/auth/register', 'Auth\AuthController@postRegister');
 Route::group(['middleware' => 'auth', 'prefix' => 'my-page'], function() {
 	Route::get('/', 'UserController@edit');
 	Route::post('/update/{id}', 'UserController@update');
+
+	// 投稿した本一覧
+	Route::get('/', 'UserController@myBooks');
 });
