@@ -59,8 +59,8 @@ article#book {
 	div img {
 		height: 180px;
 	}
-	div#book_img,
-	div#book_msg {
+	div#book_img {
+		height: 180px;
 	}
 }
 
@@ -111,9 +111,7 @@ div.icon img {
 div.msg {
 	display: block;
 	float: left;
-	height: 90px;
 	min-width: 50px;
-	overflow: hidden;
 	padding: 14px 14px 0;
 	box-sizing: border-box;
 }
