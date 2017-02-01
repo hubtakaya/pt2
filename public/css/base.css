@@ -37,8 +37,17 @@ html {
 body {
 	font-size: 0;
 	line-height: 1.5;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: Meiryo UI;
+}
+
+@media screen and(max-width: 480px){
+	body {
+		font-size: 16px;
+	}
+	.btn_each a {
+		padding: 5px 0 10px !important;
+	}
 }
 
 img {
