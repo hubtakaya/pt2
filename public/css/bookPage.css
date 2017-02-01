@@ -195,6 +195,10 @@ form#comment_form textarea{
 	div.msg p {
 		margin-top: 20px;
 	}
+
+	div#content {
+		margin-top: 15px;
+	}
 }
 
 /*footer
