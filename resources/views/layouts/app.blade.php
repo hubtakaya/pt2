@@ -37,33 +37,33 @@
 							<p id="guest">ゲストさん、こんにちは。</p>
 					</li>
 					<li>
-						<a href="{{{ cus_path('auth\login') }}}"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
+						<a href="http://suisen-book.com/auth/login"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
 					</li>
 				@else
 					<li>
-						<a href="{{ public_path() }}/my-page">
+						<a href="http://suisen-book.com/my-page">
 							<div id="icon_pro">
 
-								<img src="{{ public_path() }}\uploads\avatars\{{ Auth::user()->avatar }}">
+								<img src="http://suisen-book.com/uploads/avatars/{{ Auth::user()->avatar }}">
 								<p>{{ DB::table('users')->where('id', Auth::id())->value('name') }} さん</p>
 
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="{{ public_path() }}/books/add/1">
+						<a href="http://suisen-book.com/books/add/1">
 								<i class="fa fa-cloud-upload" aria-hidden="true"></i>本を紹介する
 						</a>
 					</li>
 
 				@endif
-				<li><a href="{{ public_path() }}/books"><i class="fa fa-book" aria-hidden="true"></i>推薦図書一覧</a></li>
+				<li><a href="http://suisen-book.com/books"><i class="fa fa-book" aria-hidden="true"></i>推薦図書一覧</a></li>
 
 				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>本を探す (準備中)</a></li>
-				<li><a href="{{ public_path() }}"><i class="fa fa-home" aria-hidden="true"></i>ホームに戻る</a></li>
+				<li><a href="http://suisen-book.com"><i class="fa fa-home" aria-hidden="true"></i>ホームに戻る</a></li>
 
 				@if (Auth::check())
-					<li><a href="{{ public_path() }}/auth/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
+					<li><a href="http://suisen-book.com/auth/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
 				@endif
 
 				<li><a id="back" href="#"><i class="fa fa-times" aria-hidden="true"></i>メニューを閉じる</a></li>

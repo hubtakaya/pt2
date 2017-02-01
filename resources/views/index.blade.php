@@ -54,7 +54,6 @@
 	<div class="h2">
 		<h2>新着の本</h2>
 		<p>新しくレビューされたり、コメントが集まっている本を一部紹介しています。</p>
-		<p class="right"><b><a href="http://localhost:81/pt2/books">本の一覧はこちら</a></b></p>
 	</div>
 
 	<div id="gross_list">
