@@ -41,9 +41,9 @@ body {
 	font-family: Meiryo UI;
 }
 
-@media screen and(max-width: 480px){
+@media screen and (max-width: 480px){
 	body {
-		font-size: 16px;
+		font-size: 16px !important;
 	}
 	.btn_each a {
 		padding: 5px 0 10px !important;
