@@ -332,6 +332,7 @@ main .container{
 
 .list {
 	background: #70996A;
+	position: relative;
 	border-radius: 5px;
 	display: block;
 	margin: 0 auto 40px;
@@ -340,10 +341,12 @@ main .container{
 }
 
 .list_image {
-	display: inline-block;
+	float: left;
+	display: block;
 	width: 49%;
 	box-sizing: border-box;
 	height: 230px;
+	margin: 0;
 }
 
 .list_image img {
@@ -354,11 +357,18 @@ main .container{
 }
 
 .list_msg {
-	display: inline-block;
-	margin-top: 15px;
+	display: block;
+	padding: 15px 3px 0;
 	width: 49%;
-	max-height: 210px;
 	box-sizing: border-box;
+	height: 230px;
+	float: left;
+}
+
+.list_msg:after {
+	display: block;
+	content: "";
+	clear: both;
 }
 
 .list_msg p {
@@ -367,6 +377,7 @@ main .container{
 	margin-right: 10px;
 	width: 100%;
 	color: #fff;
+	overflow: hidden;
 }
 
 .list_text b:before {
@@ -427,11 +438,12 @@ main .container{
 }
 
 div.button {
-	margin-top: 30px;
+	position: absolute;
 	display: block;
 	width: 100%;
 	height: 41px;
 	clear: both;
+	bottom: 10px;
 }
 
 .btn_each a {
