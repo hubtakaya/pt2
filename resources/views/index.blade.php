@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('addCSS')
-	<link rel="stylesheet" href="{{ def_path() }}/css/base.css" media="all">
+	<link rel="stylesheet" href="{{{ def_path() }}}/css/base.css" media="all">
 @endsection
 @section('addHeaderDiv')
 	<div id="theme" class="container">
