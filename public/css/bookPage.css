@@ -28,17 +28,14 @@ div img {
 	width: 100%;
 	max-width: 240px;
 	height: 100%;
-/*	border: 1px solid black;*/
 }
 
 div#book_msg {
 	display: block;
 	float: left;
 	width: 58.695650%;
-	height: 300px;
 	overflow: hidden;
 	margin-right: 3%;
-/*	border: 1px solid black;*/
 }
 
 article#book {
@@ -76,6 +73,7 @@ article#book {
 @media screen and (min-width: 641px) {
 	div img {
 		height: 300px;
+		width: 202px;
 	}
 	div#book_img,
 	div#book_msg {
