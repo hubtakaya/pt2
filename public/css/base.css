@@ -341,25 +341,23 @@ main .container{
 }
 
 .list_image {
+	padding: 30px 5px 0 10px;
 	float: left;
 	display: block;
-	width: 49%;
-	box-sizing: border-box;
+	width: 150px;
 	height: 230px;
-	margin: 0;
+	box-sizing: border-box;
 }
 
 .list_image img {
 	width: 100%;
-	max-width: 130px;
 	height: 200px;
-	margin: 30px 5px 0 10px;
 }
 
 .list_msg {
 	display: block;
-	padding: 15px 3px 0;
-	width: 49%;
+	padding: 30px 10px 0 15px;
+	width: calc(100% - 150px);
 	box-sizing: border-box;
 	height: 230px;
 	float: left;
@@ -377,6 +375,7 @@ main .container{
 	margin-right: 10px;
 	width: 100%;
 	color: #fff;
+	word-wrap: break-word;
 	overflow: hidden;
 }
 
