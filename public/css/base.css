@@ -269,6 +269,10 @@ h2 {
 	margin-bottom: 20px;
 }
 
+h2#top {
+	margin: 20px 0 !important;
+}
+
 .h2 {
 	text-align: center;
 	margin-bottom: 40px;

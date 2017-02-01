@@ -93,14 +93,13 @@
 	<div id="footer_nav">
 	<div class="container">
 		<div id="footer_nav_logo">
-			<h3><a href="{{ public_path() }}">推薦図書.com</a></h3>
+			<h3><a href="http://suisen-book.com">推薦図書.com</a></h3>
 		</div>
 		<div id="footer_nav_nav">
 			<ul>
-				<li><a href="{{ public_path() }}">ホーム</a></li>
-				<li><a href="{{ public_path() }}/books">書籍一覧</a></li>
-				<li><a href="{{ public_path() }}#footer_info">運営者情報</a></li>
-				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="http://suisen-book.com">ホーム</a></li>
+				<li><a href="http://suisen-book.com/books">書籍一覧</a></li>
+				<li><a href="http://suisen-book.com#footer_info">運営者情報</a></li>
 			</ul>
 		</div>
 	</div><!-- /.container -->
