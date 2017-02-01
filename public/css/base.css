@@ -37,7 +37,7 @@ html {
 body {
 	font-size: 0;
 	line-height: 1.5;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: Meiryo UI;
 }
 
@@ -356,7 +356,7 @@ main .container{
 
 .list_msg {
 	display: block;
-	padding: 30px 10px 0 15px;
+	padding: 30px 7px 0;
 	width: calc(100% - 150px);
 	box-sizing: border-box;
 	height: 230px;
