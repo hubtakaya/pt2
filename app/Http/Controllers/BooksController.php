@@ -33,7 +33,7 @@ class BooksController extends Controller
     }
 
     public function page() {
-        $books = Book::paginate(9);
+        $books = Book::orderBy('id', 'DESC')->paginate(9);
         return view('books.pages', compact('books'))
             ->with(['pageTitle' => '推薦図書一覧',
                     'pageLabel' => '推薦図書一覧'
