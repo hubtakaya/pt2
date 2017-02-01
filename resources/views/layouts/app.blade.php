@@ -57,7 +57,7 @@
 					</li>
 
 				@endif
-				<li><a href="http://suisen-book.com/books"><i class="fa fa-book" aria-hidden="true"></i>推薦図書一覧</a></li>
+				<li><a href="http://suisen-book.com/books"><i class="fa fa-book fa-fw" aria-hidden="true"></i>推薦図書一覧</a></li>
 
 				<li><a href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>本を探す (準備中)</a></li>
 				<li><a href="http://suisen-book.com"><i class="fa fa-home fa-fw" aria-hidden="true"></i>ホームに戻る</a></li>
