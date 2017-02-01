@@ -604,7 +604,7 @@ article {
 	color: rgb(134,21,61);
 }
 
-@media screen and (max-width: 758px){
+@media screen and (max-width: 868px){
 	article {
 		margin-top: 0;
 		padding-top: 0;
@@ -620,7 +620,8 @@ article {
 	}
 }
 
-@media screen and (min-width: 759px){
+/* 20170202_END */
+/*@media screen and (min-width: 759px){
 	article {
 		display: block;
 		float: left;
@@ -630,6 +631,8 @@ article {
 		border-right: 2px solid #70996a;
 	}
 }
+/* 20170202_END */
+
 /*	main {
 		margin: 70px auto 0;
 		display: block;
