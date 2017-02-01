@@ -53,5 +53,5 @@ Route::group(['middleware' => 'auth', 'prefix' => 'my-page'], function() {
 	Route::post('/update/{id}', 'UserController@update');
 
 	// 投稿した本一覧
-	Route::get('/', 'UserController@myBooks');
+	Route::get('/my-books', 'UserController@myBooks');
 });
