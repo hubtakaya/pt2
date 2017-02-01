@@ -37,7 +37,7 @@
 							<p id="guest">ゲストさん、こんにちは。</p>
 					</li>
 					<li>
-						<a href="http://suisen-book.com/auth/login"><i class="fa fa-sign-in" aria-hidden="true"></i>ログイン</a>
+						<a href="http://suisen-book.com/auth/login"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>ログイン</a>
 					</li>
 				@else
 					<li>
@@ -52,21 +52,21 @@
 					</li>
 					<li>
 						<a href="http://suisen-book.com/books/add/1">
-								<i class="fa fa-cloud-upload" aria-hidden="true"></i>本を紹介する
+								<i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>本を紹介する
 						</a>
 					</li>
 
 				@endif
 				<li><a href="http://suisen-book.com/books"><i class="fa fa-book" aria-hidden="true"></i>推薦図書一覧</a></li>
 
-				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>本を探す (準備中)</a></li>
-				<li><a href="http://suisen-book.com"><i class="fa fa-home" aria-hidden="true"></i>ホームに戻る</a></li>
+				<li><a href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>本を探す (準備中)</a></li>
+				<li><a href="http://suisen-book.com"><i class="fa fa-home fa-fw" aria-hidden="true"></i>ホームに戻る</a></li>
 
 				@if (Auth::check())
-					<li><a href="http://suisen-book.com/auth/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>ログアウト</a></li>
+					<li><a href="http://suisen-book.com/auth/logout"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>ログアウト</a></li>
 				@endif
 
-				<li><a id="back" href="#"><i class="fa fa-times" aria-hidden="true"></i>メニューを閉じる</a></li>
+				<li><a id="back" href="#"><i class="fa fa-times fa-fw" aria-hidden="true"></i>メニューを閉じる</a></li>
 			</ul>
 		</nav>
 	</div>

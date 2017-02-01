@@ -32,21 +32,21 @@
 	<div class="h2">
 		<h2 id="top" class="top">推薦図書.com　3つの特徴</h2>
 		<div class="points">
-			<img src="#">
+			<i class="fa fa-id-card fa-top" aria-hidden="true"></i>
 			<div class="points_msg">
-				<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<p><b>ユーザー登録して自己紹介文を記載！</b><br></p></p>
 			</div>
 		</div>
 		<div class="points">
-			<img src="#">
+			<i class="fa fa-cloud-upload fa-top" aria-hidden="true"></i>
 			<div class="points_msg">
-				<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<p><b>一押しの本をアップロード！</b><br></p>
 			</div>
 		</div>
 		<div class="points">
-			<img src="#">
+			<i class="fa fa-comments-o fa-top" aria-hidden="true"></i>
 			<div class="points_msg">
-				<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<p><b>コメント機能を使って他のユーザーと意見交換してみよう！</b><br></p>
 			</div>
 		</div>
 	</div>
