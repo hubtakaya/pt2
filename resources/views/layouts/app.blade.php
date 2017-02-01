@@ -10,14 +10,14 @@
 		同じく読んだことがある人と意見を交換するも良し、
 		新しく読む本を見つけるきっかけにするも良しのサイトです。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="{{ def_path() }}/js/jquery.js"></script>
-	<script src="{{ def_path() }}/js/iscroll.js"></script>
+	<script src="{{ public_path() }}/js/jquery.js"></script>
+	<script src="{{ public_path() }}/js/iscroll.js"></script>
 
-	<link rel="shortcut icon" href="{{ def_path() }}/favicon.png" />
-	<link rel="stylesheet" href="{{ def_path() }}/css/drawer.min.css">
-	<script src="{{ def_path() }}/js/drawer.min.js"></script>
-	<script src="{{ def_path() }}/js/customized.js"></script>
-	<link rel="stylesheet" href="{{ def_path() }}/css/font-awesome.css">
+	<link rel="shortcut icon" href="{{ public_path() }}/favicon.png" />
+	<link rel="stylesheet" href="{{ public_path() }}/css/drawer.min.css">
+	<script src="{{ public_path() }}/js/drawer.min.js"></script>
+	<script src="{{ public_path() }}/js/customized.js"></script>
+	<link rel="stylesheet" href="{{ public_path() }}/css/font-awesome.css">
 
 	@yield('addCSS')
 </head>
