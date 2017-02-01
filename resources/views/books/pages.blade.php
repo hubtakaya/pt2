@@ -25,7 +25,7 @@
 				<img src="http://suisen-book.com{{ $book->pic->url('original') }}">
 			</div>
 			<div class="list_msg">
-				<p class="list_text"><b>{{ $book->title }}</b></br>{{ $book->autor }}</p>
+				<p class="list_text"><b>{{ $book->title }}</b></br>{{ $book->intro }}</p>
 			</div>
 			<div class="button">
 				<p class="btn_each"><b>

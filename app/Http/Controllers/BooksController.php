@@ -24,7 +24,7 @@ class BooksController extends Controller
     public function index() {
 
     	// Books テーブルのデータをすべて取得する
-    	$books = Book::all();
+    	$books = Book::orderBy('id', 'DESC')->paginate(9);
     	return view('index', compact('books'))
             ->with(['nav' => 'top_nav',
                     'headerFalse' => 'true'
