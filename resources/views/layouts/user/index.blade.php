@@ -17,7 +17,6 @@
 	</div>
 @endif
 
-
 @include('layouts.user.article')
 
 <div id="dammy"></div>
