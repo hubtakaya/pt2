@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 // モデルの宣言
 use App\User;
+use App\Book;
 use Carbon\Carbon;
 use Auth;
 use Image;
