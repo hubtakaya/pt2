@@ -25,7 +25,7 @@
 	<div id="my-book">
 		<ul id="my-book_list">
 		@foreach ($books as $book)
-			<li>{{ $book->title }}, <a href="http://suisen-book.com/books/edit/{{ $book->id }}"></a></li>
+			<li>{{ $book->title }}, <a href="http://suisen-book.com/books/edit/{{ $book->id }}">編集</a></li>
 		@endforeach
 		</ul>
 	</div>
