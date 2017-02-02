@@ -1,6 +1,6 @@
 <article>
 	<div id="profile">
-		<img src="uploads/avatars/{{ Auth::user()->avatar }}">
+		<img src="/uploads/avatars/{{ Auth::user()->avatar }}">
 		<div id="name">
 			<p>{{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}} さんのマイページ<p>
 		</div>

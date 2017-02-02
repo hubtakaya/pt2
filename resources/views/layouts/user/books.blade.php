@@ -24,7 +24,7 @@
 <main>
 	<div id="my-book">
 		<ul id="my-book_list">
-		@foreach ($books->all() as $book)
+		@foreach ($books as $book)
 			<li>{{ $book->title }}, <a href="http://suisen-book.com/books/edit/{{ $book->id }}"></a></li>
 		@endforeach
 		</ul>
