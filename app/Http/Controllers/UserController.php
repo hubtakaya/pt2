@@ -123,7 +123,7 @@ class UserController extends Controller
     {
         $books = DB::table('books')->select('id', 'title')->where('user_id', Auth()->id())->get();
         // $books = Book::get(['id', 'title'])->where('user_id', Auth()->id());
-        // return view('layouts.user.books', compact('books'));
+        return view('layouts.user.books', compact('books'));
     }
 
     /**
