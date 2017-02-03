@@ -37,7 +37,7 @@
 	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<!-- end favicon links -->
-	<link rel="stylesheet" href="{{ env }}/advertize_design/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="{{ $env }}/advertize_design/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="http://suisen-book.com/advertize_design/css/normalize.min.css">
 	<link rel="stylesheet" href="http://suisen-book.com/advertize_design/css/animate.min.css">
 	<link rel="stylesheet" href="http://suisen-book.com/advertize_design/css/flickity.min.css">
