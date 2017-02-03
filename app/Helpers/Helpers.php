@@ -13,9 +13,9 @@ function cus_path($str){
 
 function get_env(){
         if (App::environment('local')) {
-            $env = "http://localhost:81/pt2/advertize_design";
+            $env = "http://localhost:81/pt2";
         } else {
-            $env = "http://suisen-book.com/advertize_design";
+            $env = "http://suisen-book.com";
         }
         return $env;
 }
