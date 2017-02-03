@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 
 // モデルの宣言
 use App\User;
-use App\Book;
+use DB;
 use Carbon\Carbon;
 use Auth;
 use Image;
@@ -120,7 +120,7 @@ class UserController extends Controller
 
     public function myBooks()
     {
-        $books = Book::get(['id', 'title'])->where('user_id', Auth()->id());
+        $books = DB::table(['books'])->select('id', 'title')->where('user_id', Auth()->id());
         return view('layouts.user.books', compact('books'));
     }
 
