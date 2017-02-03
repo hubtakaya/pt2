@@ -121,8 +121,8 @@ class UserController extends Controller
 
     public function myBooks()
     {
-        // $books = DB::table('books')->select('id', 'title')->where('user_id', Auth()->id())->get();
-        $books = Book::get(['id', 'title'])->where('user_id', Auth()->id());
+        $books = DB::table('books')->select('id', 'title')->where('user_id', Auth()->id())->get();
+        // $books = Book::get(['id', 'title'])->where('user_id', Auth()->id());
         return view('layouts.user.books', compact('books'));
     }
 
