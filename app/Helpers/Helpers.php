@@ -1,4 +1,5 @@
 <?php
+use App;
 
 function def_path(){
 	$url = 'http://suisen-book.com/';
