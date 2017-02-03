@@ -53,7 +53,7 @@
 		<div class="row">
 			<div class="header-nav-wrapper">
 				<div class="logo">
-					<a href="/index.html"><img src="img/synthetica-logo.png" alt="Synthetica Freebie Peter Finlan"></a>
+					<a href="http://suisen-book.com/farewell"><img src="http://suisen-book.com/advertize_design/img/synthetica-logo.png" alt="Synthetica Freebie Peter Finlan"></a>
 				</div>
 				<div class="primary-nav-wrapper">
 					<nav>
@@ -159,7 +159,7 @@
 				<div class="col-md-9">
 					<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
 					<div class="video-player">
-						<video id="video_synth" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="568" height="300" poster="img/video-cover.jpg" data-setup='{}'>
+						<video id="video_synth" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="568" height="300" poster="http://suisen-book.com/advertize_design/img/video-cover.jpg" data-setup='{}'>
 							<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
 							<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm" />
 							<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg" />
@@ -580,7 +580,7 @@
 									</div>
 								</div>
 							</figcaption>
-							<img src="img/freebie-03.jpg" alt="Synthetica Freebie by Peter Finlan">
+							<img src="http://suisen-book.com/advertize_design/img/freebie-03.jpg" alt="Synthetica Freebie by Peter Finlan">
 						</figure>
 					</article>
 				</div>
@@ -606,7 +606,7 @@
 									</div>
 								</div>
 							</figcaption>
-							<img src="img/freebie-04.jpg" alt="Synthetica by Freebie Peter Finlan">
+							<img src="http://suisen-book.com/advertize_design/img/freebie-04.jpg" alt="Synthetica by Freebie Peter Finlan">
 						</figure>
 					</article>
 				</div>
