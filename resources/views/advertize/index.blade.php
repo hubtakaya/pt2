@@ -258,7 +258,7 @@
 			<div class="row skillset">
 				<div class="col-md-6">
 					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">Experience Design <span class="push-right">90%</span></h5>
+						<h5 class="bar-chart-text">Hungry <span class="push-right">90%</span></h5>
 						<div class="bar-wrapper">
 							<div class="bar" data-percentage="90%">
 								<span></span>
@@ -266,9 +266,9 @@
 						</div>
 					</div>
 					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">HTML5/CSS3 <span class="push-right">95%</span></h5>
+						<h5 class="bar-chart-text">Stable preference <span class="push-right">3%</span></h5>
 						<div class="bar-wrapper">
-							<div class="bar" data-percentage="95%">
+							<div class="bar" data-percentage="3%">
 								<span></span>
 							</div>
 						</div>
@@ -276,17 +276,17 @@
 				</div>
 				<div class="col-md-6">
 					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">Interactive Prototyping <span class="push-right">80%</span></h5>
+						<h5 class="bar-chart-text">乞食/Begger <span class="push-right">約1人 / One person</span></h5>
 						<div class="bar-wrapper">
-							<div class="bar" data-percentage="80%">
+							<div class="bar" data-percentage="25%">
 								<span></span>
 							</div>
 						</div>
 					</div>
 					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">Visual Design <span class="push-right">90%</span></h5>
+						<h5 class="bar-chart-text">狩猟民族 <span class="push-right">100%</span></h5>
 						<div class="bar-wrapper">
-							<div class="bar" data-percentage="90%">
+							<div class="bar" data-percentage="100%">
 								<span></span>
 							</div>
 						</div>
