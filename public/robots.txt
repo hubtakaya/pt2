@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /public/google1d2d35642d730891.html
+Disallow: /farewell
