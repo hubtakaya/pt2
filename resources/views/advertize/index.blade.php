@@ -89,7 +89,7 @@
 	</div>
 	<header class="hero">
 		<div class="carousel js-flickity">
-			<div class="carousel-cell" style="background-image: url(img/hero-bg-01.jpg);">
+			<div class="carousel-cell" style="background-image: url(http://suisen-book.com/advertize_design/img/hero-bg-01.jpg);">
 				<div class="hero-bg">
 					<div class="container">
 						<div class="row">
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="carousel-cell" style="background-image: url(img/hero-bg-02.jpg);">
+			<div class="carousel-cell" style="background-image: url(http://suisen-book.com/advertize_design/img/hero-bg-02.jpg);">
 				<div class="hero-bg">
 					<div class="container">
 						<div class="row">
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="carousel-cell" style="background-image: url(img/hero-bg-03.jpg);">
+			<div class="carousel-cell" style="background-image: url(http://suisen-book.com/advertize_design/img/hero-bg-03.jpg);">
 				<div class="hero-bg">
 					<div class="container">
 						<div class="row">
@@ -183,7 +183,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url(img/crew-peter-finlan.jpg)">
+					<article class="crew-member" style="background-image: url(http://suisen-book.com/advertize_design/img/crew-peter-finlan.jpg)">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Peter Finlan</h2>
@@ -201,7 +201,7 @@
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url(img/crew-blaz-robar.jpg)">
+					<article class="crew-member" style="background-image: url(http://suisen-book.com/advertize_design/img/crew-blaz-robar.jpg)">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Blaz Robar</h2>
@@ -219,7 +219,7 @@
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url(img/crew-mary-lou.jpg)">
+					<article class="crew-member" style="background-image: url(http://suisen-book.com/advertize_design/img/crew-mary-lou.jpg)">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Mary Lou</h2>
@@ -237,7 +237,7 @@
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url('img/crew-dude.jpg')">
+					<article class="crew-member" style="background-image: url('http://suisen-book.com/advertize_design/img/crew-dude.jpg')">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Kobe West</h2>
@@ -346,7 +346,7 @@
 				<div class="col-md-4">
 					<article class="article-post">
 						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-01.jpg)">
+							<div class="article-image has-overlay" style="background-image: url(http://suisen-book.com/advertize_design/img/article-01.jpg)">
 								<span class="featured-tag">Featured</span>
 							</div>
 							<figure>
@@ -369,7 +369,7 @@
 				<div class="col-md-4">
 					<article class="article-post">
 						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-02.jpg)">
+							<div class="article-image has-overlay" style="background-image: url(http://suisen-book.com/advertize_design/img/article-02.jpg)">
 							</div>
 							<figure>
 								<figcaption>
@@ -391,7 +391,7 @@
 				<div class="col-md-4">
 					<article class="article-post">
 						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-03.jpg)">
+							<div class="article-image has-overlay" style="background-image: url(http://suisen-book.com/advertize_design/img/article-03.jpg)">
 							</div>
 							<figure>
 								<figcaption>
@@ -415,7 +415,7 @@
 				<div class="col-md-4">
 					<article class="article-post">
 						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-04.jpg)">
+							<div class="article-image has-overlay" style="background-image: url(http://suisen-book.com/advertize_design/img/article-04.jpg)">
 							</div>
 							<figure>
 								<figcaption>
@@ -437,7 +437,7 @@
 				<div class="col-md-4">
 					<article class="article-post">
 						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-05.jpg)">
+							<div class="article-image has-overlay" style="background-image: url(http://suisen-book.com/advertize_design/img/article-05.jpg)">
 							</div>
 							<figure>
 								<figcaption>
@@ -459,7 +459,7 @@
 				<div class="col-md-4">
 					<article class="article-post">
 						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-06.jpg)">
+							<div class="article-image has-overlay" style="background-image: url(http://suisen-book.com/advertize_design/img/article-06.jpg)">
 							</div>
 							<figure>
 								<figcaption>
@@ -526,7 +526,7 @@
 									</div>
 								</div>
 							</figcaption>
-							<img src="img/sedna-freebie.jpg" alt="Sedna Freebie Peter Finlan">
+							<img src="http://suisen-book.com/advertize_design/img/sedna-freebie.jpg" alt="Sedna Freebie Peter Finlan">
 						</figure>
 					</article>
 				</div>
@@ -552,7 +552,7 @@
 									</div>
 								</div>
 							</figcaption>
-							<img src="img/landio-freebie.jpg" alt="Land.io Freebie Peter Finlan">
+							<img src="http://suisen-book.com/advertize_design/img/landio-freebie.jpg" alt="Land.io Freebie Peter Finlan">
 						</figure>
 					</article>
 				</div>
