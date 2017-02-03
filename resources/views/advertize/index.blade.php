@@ -183,11 +183,11 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url({{ $env }}/img/.jpg)">
+					<article class="crew-member" style="background-image: url({{ $env }}/img/suzuki.jpg)">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Suzuki</h2>
-								<p>Having been working in Thailand for 6 months, he experienced couple of projects. Currently, he is thinking about next step as a Cross-Bording developper. 尚、よくタイ人に間違われる。</p>
+								<p>Having been working in Thailand for 6 months, he experienced couple of projects. Currently, he is thinking about next step as a Cross-Bording developper. <br />よくタイ人に間違われる。</p>
 								<div class="crew-socials">
 									<ul>
 										<li><a href="https://twitter.com/ytkhippy"><i class="fa fa-twitter"></i></a>
