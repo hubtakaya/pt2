@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Synthetica HTML5/CSS3 Template by Peter Finlan</title>
+	<title>FAREWELL Thailand</title>
 	<meta name="description" content="A free html template with Sketch design made with Bootstrap">
 	<meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
 	<meta name="author" content="Peter Finlan for Codrops" />
@@ -37,7 +37,7 @@
 	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<!-- end favicon links -->
-	<link rel="stylesheet" href="http://suisen-book.com/advertize_design/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="{{ $env }}/advertize_design/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="http://suisen-book.com/advertize_design/css/normalize.min.css">
 	<link rel="stylesheet" href="http://suisen-book.com/advertize_design/css/animate.min.css">
 	<link rel="stylesheet" href="http://suisen-book.com/advertize_design/css/flickity.min.css">
