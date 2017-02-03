@@ -20,9 +20,9 @@ class AdController extends Controller
     {
         //
         if (App::environment('local')) {
-            $env = "http://localhost:81/pt2";
+            $env = "http://localhost:81/pt2/advertize_design";
         } else {
-            $env = "http://suisen-book.com";
+            $env = "http://suisen-book.com/advertize_design";
         }
         return view('advertize.index')->with('env', $env);
     }
