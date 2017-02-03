@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+article.crew-member{ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
