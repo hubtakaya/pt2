@@ -223,7 +223,7 @@
 						<figure>
 							<figcaption class="overlay">
 								<h2>Ouchi</h2>
-								<p>Sales, Designer, and Event Organizer, like a Perfect-Multi-Tasker. Given his good performance and great personality, he will never make us disappointed.<br />初対面のタイガールに変態と思われがち。。。</p>
+								<p>Sales, Designer, and Event Organizer, like a Perfect-Multi-Tasker. Given his good performance and great personality, he will never make us disappointed.<br />営業先では喉がかわくよ。</p>
 								<div class="crew-socials">
 									<ul>
 										<li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -315,10 +315,10 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 stats-container">
-					<i class="icon icon-Pen"></i>
+					<i class="icon icon-Web"></i>
 					<div class="stats-wrapper">
-						<p class="stats-number" data-stop="43">43</p>
-						<p class="stats-text">Freebies</p>
+						<p class="stats-number" data-stop="3">3</p>
+						<p class="stats-text">Website Launched</p>
 					</div>
 				</div>
 			</div>
