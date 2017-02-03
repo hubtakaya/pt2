@@ -59,7 +59,7 @@
 					<nav>
 						<ul class="primary-nav">
 							<li><a href="#intro">The collective</a></li>
-							<li><a href="#team">The crew</a></li>
+							<li><a href="#team">Members</a></li>
 							<li><a href="#articles">Articles</a></li>
 							<li><a href="#freebies">Freebies</a></li>
 						</ul>
@@ -94,13 +94,13 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center">
-								<h1 class="wp1">Introducing, Synthetica. A blissful HTML5/CSS3 Template, free forever.</h1>
-								<a href="#intro" class="btn primary wp2">Learn more</a>
+								<h1 class="wp1">Suzuki and Ouchi were cutting-edge interns of Thailand. We celebrate their farewell and hold parties on February 8th.</h1>
+								<a href="#intro" class="btn primary wp2">Want to join</a>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 hero-intro-text wp3">
-								<p>Synthetica is a <span class="bold italic">FREE</span>, HTML5/CSS3 template by Peter Finlan, available for download exclusively via Codrops. </p>
+								<p>Suzuki and Ouchi are<span class="bold italic">HIGH-PERFORMANCE Intern</span>, in the scope of Web development and Influencer Marketing.</p>
 							</div>
 						</div>
 					</div>
@@ -111,13 +111,13 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center">
-								<h1 class="wp1">Get a head start, with the Synthetica Sketch file.</h1>
-								<a href="http://tympanus.net/codrops/?p=26570" class="btn primary wp2">Download Sketch File</a>
+								<h1 class="wp1">Let's join our farewell party.</h1>
+								<a href="mailto:hubtakaya@yahoo.co.jp" class="btn primary wp2">Mail to Organizer</a>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 hero-intro-text wp3">
-								<p>Create your landing page in minutes with Synthetica's Sketch style guide.</p>
+								<p>No need to be hesitate. Let's join us!</p>
 							</div>
 						</div>
 					</div>
@@ -128,13 +128,13 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center">
-								<h1 class="wp1">Download Synthetica today, it's free forever.</h1>
-								<a href="http://tympanus.net/codrops/?p=26570" class="btn primary wp2">Download Template</a>
+								<h1 class="wp1">Do you want to visit our real page?? (Not kidding) Click here.</h1>
+								<a href="http://suisen-book.com" class="btn danger wp2">No kidding page <br /> (Only Japanese)</a>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 hero-intro-text wp3">
-								<p>Available exclusively from Codrops.</p>
+								<p>If you like Books more than Free WiFi, it must be great idea to click this button!!</p>
 							</div>
 						</div>
 					</div>
