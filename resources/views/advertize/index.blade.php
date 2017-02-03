@@ -634,7 +634,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 footer-branding">
-					<img class="footer-branding-logo" src="img/synthetica-logo.png" alt="Synthetica freebie html5 css3 template peter finlan logo">
+					<img class="footer-branding-logo" src="http://suisen-book.com/advertize_design/img/synthetica-logo.png" alt="Synthetica freebie html5 css3 template peter finlan logo">
 					<p>A free HTML5/CSS3 template by <a href="http://www.peterfinlan.com">Peter Finlan</a>, exclusively for <span class="bold-italic">Codrops</span></p>
 				</div>
 			</div>
