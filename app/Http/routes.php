@@ -15,6 +15,7 @@
 //Route::post('api/github', ['middleware' => 'github.secret.token', 'uses' => 'GithubController@githubUpdate']);
 
 Route::get('/', 'BooksController@index');
+Route::get('/farewell', 'AdController@index');
 
 // 表示
 Route::get('/books/{id}', 'BooksController@show');
