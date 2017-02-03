@@ -13,7 +13,7 @@
 	<script src="http://suisen-book.com/js/jquery.js"></script>
 	<script src="http://suisen-book.com/js/iscroll.js"></script>
 
-	<link rel="shortcut icon" href="http://suisen-book.com/favicon.png" />
+	<link rel="shortcut icon" href="{{ get_env(); }}/favicon.png" />
 	<link rel="stylesheet" href="http://suisen-book.com/css/drawer.min.css">
 	<script src="http://suisen-book.com/js/drawer.min.js"></script>
 	<script src="http://suisen-book.com/js/customized.js"></script>
