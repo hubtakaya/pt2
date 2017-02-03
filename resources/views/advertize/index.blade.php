@@ -178,21 +178,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h4>The Crew</h4>
+					<h4>Members</h4>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url({{ $env }}/img/crew-peter-finlan.jpg)">
+					<article class="crew-member" style="background-image: url({{ $env }}/img/.jpg)">
 						<figure>
 							<figcaption class="overlay">
-								<h2>Peter Finlan</h2>
-								<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+								<h2>Suzuki</h2>
+								<p>Having been working in Thailand for 6 months, he experienced couple of projects. Currently, he is thinking about next step as a Cross-Bording developper. 尚、よくタイ人に間違われる。</p>
 								<div class="crew-socials">
 									<ul>
-										<li><a href="http://www.twitter.com/peterfinlan/"><i class="fa fa-twitter"></i></a>
+										<li><a href="https://twitter.com/ytkhippy"><i class="fa fa-twitter"></i></a>
 										</li>
-										<li><a href="http://www.linkedin.com/in/peterfinlan/"><i class="fa fa-linkedin"></i></a>
+										<li><a href="https://www.facebook.com/profile.php?id=100005635141347"><i class="fa fa-facebook"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -201,7 +201,7 @@
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url({{ $env }}/img/crew-blaz-robar.jpg)">
+					<article class="crew-member" style="background-image: url({{ $env }}/img/kanno.jpg)">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Blaz Robar</h2>
@@ -219,7 +219,7 @@
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url({{ $env }}/img/crew-mary-lou.jpg)">
+					<article class="crew-member" style="background-image: url({{ $env }}/img/ouchi.jpg)">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Mary Lou</h2>
@@ -237,7 +237,7 @@
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url('{{ $env }}/img/crew-dude.jpg')">
+					<article class="crew-member" style="background-image: url('{{ $env }}/img/shimatani.jpg')">
 						<figure>
 							<figcaption class="overlay">
 								<h2>Kobe West</h2>
@@ -642,7 +642,7 @@
 				<div class="col-md-12 footer-nav">
 					<ul class="footer-primary-nav">
 						<li><a href="#intro">The Collective</a></li>
-						<li><a href="#team">The Crew</a></li>
+						<li><a href="#team">Members</a></li>
 						<li><a href="#articles">Articles</a></li>
 						<li><a href="#freebies">Freebies</a></li>
 						<li><a href="#">Subscribe</a></li>
