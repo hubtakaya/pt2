@@ -204,8 +204,8 @@
 					<article class="crew-member" style="background-image: url({{ $env }}/img/kanno.jpg)">
 						<figure>
 							<figcaption class="overlay">
-								<h2>Blaz Robar</h2>
-								<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+								<h2>Kanno</h2>
+								<p>Working as a Marketer and stay until April. Always handling with couple of projects, it contributes to co-workers and his outstanding reputation.<br />実は田舎出身</p>
 								<div class="crew-socials">
 									<ul>
 										<li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -222,8 +222,8 @@
 					<article class="crew-member" style="background-image: url({{ $env }}/img/ouchi.jpg)">
 						<figure>
 							<figcaption class="overlay">
-								<h2>Mary Lou</h2>
-								<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+								<h2>Ouchi</h2>
+								<p>Sales, Designer, and Event Organizer, like a Perfect-Multi-Tasker. Given his good performance and great personality, he will never make us disappointed.<br />初対面のタイガールに変態と思われがち。。。</p>
 								<div class="crew-socials">
 									<ul>
 										<li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -240,8 +240,8 @@
 					<article class="crew-member" style="background-image: url('{{ $env }}/img/shimatani.jpg')">
 						<figure>
 							<figcaption class="overlay">
-								<h2>Kobe West</h2>
-								<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+								<h2>Shimatani</h2>
+								<p>Usually he works until midnight and protect deadline. Some senior says he is too insensitive to mind. Very patient and fearless, which must be great advantage as Sales person.<br />大阪出身だからか超おもしろい。え、嘘じゃないよ？</p>
 								<div class="crew-socials">
 									<ul>
 										<li><a href="#"><i class="fa fa-twitter"></i></a>
