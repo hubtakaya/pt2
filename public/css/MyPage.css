@@ -696,42 +696,6 @@ article {
 }
 
 
-/*footer
---------------------*/
-footer {
-	clear: both;
-}
-
-footer #footer_info {
-	background-color: rgb(170, 170, 170);
-	padding-top: 30px;
-	color: #fff;
-}
-
-div#info_img {
-
-}
-
-div#footer_bottom {
-	background-color: #006638;
-	color: rgb(170, 170, 170);
-	text-align: center;
-}
-
-@media screen and (min-width: 639px){
-	div#info_img {
-		float: left;
-		width: 35%;
-		margin-right: 5%;
-	}
-
-	div#info_dtl {
-		float: right;
-		width: 60%;
-	}
-}
-
-
 /*
 =======================================
 	SESSION MYPAGE
