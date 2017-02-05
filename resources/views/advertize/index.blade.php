@@ -317,7 +317,7 @@
 				<div class="col-md-4 col-sm-4 stats-container">
 					<i class="icon icon-Web"></i>
 					<div class="stats-wrapper">
-						<p class="stats-number" data-stop="3">3</p>
+						<p class="stats-number" data-stop="6">6</p>
 						<p class="stats-text">Website Launched</p>
 					</div>
 				</div>
