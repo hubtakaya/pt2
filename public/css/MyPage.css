@@ -746,17 +746,21 @@ div#footer_nav li
 
 ul#my-book_list {
 	width: 100%;
-	padding: 0 20px;
+	padding: 20px;
 	box-sizing: border-box;
 }
 
-span.my-book_title {
-	margin-right: 15px;
-}
+	ul#my-book_list li {
+		padding: 5px;
+	}
 
-a.my-book_edit {
-	padding: 3px 10px;
-	color: #fff;
-	background-color: #337ab7;
-	border-radius: 3px;
-}
+	span.my-book_title {
+		margin-right: 15px;
+	}
+
+	a.my-book_edit {
+		padding: 3px 10px;
+		color: #fff;
+		background-color: #337ab7;
+		border-radius: 3px;
+	}
