@@ -61,30 +61,6 @@ header #theme {
 		font-size: 36px;
 	}
 
-
-/*global navigation*/
-#gnav {
-	background-color: rgb(170, 170, 170);
-/*	background: #008046;*/
-	margin-bottom: 40px;
-}
-
-#gnav ul {
-	/*overflow: hidden;*/
-}
-
-#gnav li {
-	float: left;
-	width: 25%;
-	text-align: center;
-}
-
-#gnav a {
-	display: block;
-	padding: 15px 0;
-	color: #fff;
-}
-
 /* h2
 --------------------*/
 
@@ -151,6 +127,7 @@ h2 {
 
 /* list書式
 --------------------*/
+/*
 main .container{
 	padding-left: 0;
 	padding-right: 0;
@@ -182,7 +159,6 @@ main .container{
 .list_msg {
 	display: inline-block;
 	width: 49%;
-	/*imageの高さに合わせる*/
 	box-sizing: border-box;
 }
 
@@ -276,6 +252,7 @@ div.button {
 	box-shadow: 0 2px 0 0 rgb(134, 21, 61);
 	top: 2px;
 }
+*/
 
 /* myPage
 --------------------*/
@@ -763,4 +740,21 @@ div#footer_nav li
 		content: "";
 		clear: both;
 	}
+}
+
+/* MyBooks */
+
+ul#my-book_list {
+	width: 100%;
+	padding: 0 20px;
+}
+
+span.my-book_title {
+	margin-right: 15px;
+}
+
+a.my-book_edit {
+	padding: 3px 10px;
+	color: #fff;
+	background-color: #337ab7;
 }
