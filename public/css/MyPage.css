@@ -744,14 +744,14 @@ div#footer_nav li
 
 /* MyBooks */
 
-ul#my-book_list {
+ul#my-book_listx {
 	width: 100%;
 	padding: 20px;
 	box-sizing: border-box;
 }
 
 	ul#my-book_list li {
-		padding: 5px;
+		padding: 8px;
 	}
 
 	span.my-book_title {
