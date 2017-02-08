@@ -53,7 +53,7 @@
 		<div class="row">
 			<div class="header-nav-wrapper">
 				<div class="logo">
-					<a href="http://suisen-book.com/farewell"><img src="{{ $env }}/img/synthetica-logo.png" alt="Synthetica Freebie Peter Finlan"></a>
+					<a href="{{ get_env() }}/farewell"><img src="{{ $env }}/img/synthetica-logo.png" alt="Synthetica Freebie Peter Finlan"></a>
 				</div>
 				<div class="primary-nav-wrapper">
 					<nav>
@@ -129,7 +129,7 @@
 						<div class="row">
 							<div class="col-md-12 text-center">
 								<h1 class="wp1">Do you want to visit our real page?? (Not kidding) Click here.</h1>
-								<a href="http://suisen-book.com" class="btn primary wp2">No kidding page <br /> (Only Japanese)</a>
+								<a href="{{ get_env() }}" class="btn primary wp2">No kidding page <br /> (Only Japanese)</a>
 							</div>
 						</div>
 						<div class="row">

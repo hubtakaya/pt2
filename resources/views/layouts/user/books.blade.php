@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('addCSS')
-	<link rel="stylesheet" href="http://suisen-book.com/css/base.css" media="all">
-	<link rel="stylesheet" href="http://suisen-book.com/css/MyPage.css" media="all">
+	<link rel="stylesheet" href="{{ get_env() }}/css/base.css" media="all">
+	<link rel="stylesheet" href="{{ get_env() }}/css/MyPage.css" media="all">
 @endsection
 @section('content')
 
@@ -27,7 +27,7 @@
 		@foreach ($books as $book)
 			<li>
 				<span class="my-book_title">{{ $book->title }}</span>
-				<a class="my-book_edit" href="http://suisen-book.com/books/edit/{{ $book->id }}">編集</a>
+				<a class="my-book_edit" href="{{ get_env() }}/books/edit/{{ $book->id }}">編集</a>
 			</li>
 		@endforeach
 		</ul>

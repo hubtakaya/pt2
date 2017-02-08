@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('addCSS')
-	<link rel="stylesheet" href="http://suisen-book.com/css/base.css" media="all">
+	<link rel="stylesheet" href="{{ get_env() }}/css/base.css" media="all">
 @endsection
 @section('content')
 
@@ -38,7 +38,7 @@
 </form><!-- #signin -->
 </div><!-- #form -->
 
-<p id="newAccount"><a href="http://suisen-book.com/auth/register">※新しくアカウント登録</a></p>
+<p id="newAccount"><a href="{{ get_env() }}/auth/register">※新しくアカウント登録</a></p>
 
 </main>
 @endsection

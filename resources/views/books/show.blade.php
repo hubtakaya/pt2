@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('addCSS')
-	<link rel="stylesheet" href="http://suisen-book.com/css/base.css" media="all">
-	<link rel="stylesheet" href="http://suisen-book.com/css/bookPage.css" media="all">
+	<link rel="stylesheet" href="{{ get_env() }}/css/base.css" media="all">
+	<link rel="stylesheet" href="{{ get_env() }}/css/bookPage.css" media="all">
 @endsection
 @section('content')
 
@@ -9,7 +9,7 @@
 
 <article id="book" class="clearfix">
 	<div id="book_img">
-		<img src="http://suisen-book.com{{ $book->pic->url('original') }}"
+		<img src="{{ get_env() }}{{ $book->pic->url('original') }}"
 		 alt="{{ $book->title }}">
 	</div><!-- /#book_img -->
 	<div id="book_msg">
@@ -28,7 +28,7 @@
 	@forelse($comments as $comment)
 		<div class="comment clearfix">
 			<div class="icon">
-				<img src="http://suisen-book.com/uploads/avatars/{{ isset(App\User::find( $comment->user_id )->avatar) ? App\User::find( $comment->user_id )->avatar : 'default.jpg' }}">
+				<img src="{{ get_env() }}/uploads/avatars/{{ isset(App\User::find( $comment->user_id )->avatar) ? App\User::find( $comment->user_id )->avatar : 'default.jpg' }}">
 				<p class="username">{{ isset(App\User::find( $comment->user_id )->name) ? App\User::find( $comment->user_id )->name : 'Not Found' }}</p>
 			</div><!-- /.icon -->
 			<div class="msg">
