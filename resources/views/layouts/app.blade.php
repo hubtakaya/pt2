@@ -10,14 +10,14 @@
 		同じく読んだことがある人と意見を交換するも良し、
 		新しく読む本を見つけるきっかけにするも良しのサイトです。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="http://suisen-book.com/js/jquery.js"></script>
-	<script src="http://suisen-book.com/js/iscroll.js"></script>
+	<script src="{{ get_env() }}/js/jquery.js"></script>
+	<script src="{{ get_env() }}/js/iscroll.js"></script>
 
 	<link rel="shortcut icon" href="{{ get_env() }}/favicon.png" />
-	<link rel="stylesheet" href="http://suisen-book.com/css/drawer.min.css">
-	<script src="http://suisen-book.com/js/drawer.min.js"></script>
-	<script src="http://suisen-book.com/js/customized.js"></script>
-	<link rel="stylesheet" href="http://suisen-book.com/css/font-awesome.css">
+	<link rel="stylesheet" href="{{ get_env() }}/css/drawer.min.css">
+	<script src="{{ get_env() }}/js/drawer.min.js"></script>
+	<script src="{{ get_env() }}/js/customized.js"></script>
+	<link rel="stylesheet" href="{{ get_env() }}/css/font-awesome.css">
 
 	@yield('addCSS')
 </head>
@@ -37,33 +37,33 @@
 							<p id="guest">ゲストさん、こんにちは。</p>
 					</li>
 					<li>
-						<a href="http://suisen-book.com/auth/login"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>ログイン</a>
+						<a href="{{ get_env() }}/auth/login"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>ログイン</a>
 					</li>
 				@else
 					<li>
-						<a href="http://suisen-book.com/my-page">
+						<a href="{{ get_env() }}/my-page">
 							<div id="icon_pro">
 
-								<img src="http://suisen-book.com/uploads/avatars/{{ Auth::user()->avatar }}">
+								<img src="{{ get_env() }}/uploads/avatars/{{ Auth::user()->avatar }}">
 								<p>{{ DB::table('users')->where('id', Auth::id())->value('name') }} さん</p>
 
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="http://suisen-book.com/books/add/1">
+						<a href="{{ get_env() }}/books/add/1">
 								<i class="fa fa-cloud-upload fa-fw" aria-hidden="true"></i>本を紹介する
 						</a>
 					</li>
 
 				@endif
-				<li><a href="http://suisen-book.com/books"><i class="fa fa-book fa-fw" aria-hidden="true"></i>推薦図書一覧</a></li>
+				<li><a href="{{ get_env() }}/books"><i class="fa fa-book fa-fw" aria-hidden="true"></i>推薦図書一覧</a></li>
 
 				<li><a href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>本を探す (準備中)</a></li>
-				<li><a href="http://suisen-book.com"><i class="fa fa-home fa-fw" aria-hidden="true"></i>ホームに戻る</a></li>
+				<li><a href="{{ get_env() }}"><i class="fa fa-home fa-fw" aria-hidden="true"></i>ホームに戻る</a></li>
 
 				@if (Auth::check())
-					<li><a href="http://suisen-book.com/auth/logout"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>ログアウト</a></li>
+					<li><a href="{{ get_env() }}/auth/logout"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>ログアウト</a></li>
 				@endif
 
 				<li><a id="back" href="#"><i class="fa fa-times fa-fw" aria-hidden="true"></i>メニューを閉じる</a></li>
@@ -93,13 +93,13 @@
 	<div id="footer_nav">
 	<div class="container">
 		<div id="footer_nav_logo">
-			<h3><a href="http://suisen-book.com">推薦図書.com</a></h3>
+			<h3><a href="{{ get_env() }}">推薦図書.com</a></h3>
 		</div>
 		<div id="footer_nav_nav">
 			<ul>
-				<li><a href="http://suisen-book.com">ホーム</a></li>
-				<li><a href="http://suisen-book.com/books">書籍一覧</a></li>
-				<li><a href="http://suisen-book.com#footer_info">運営者情報</a></li>
+				<li><a href="{{ get_env() }}">ホーム</a></li>
+				<li><a href="{{ get_env() }}/books">書籍一覧</a></li>
+				<li><a href="{{ get_env() }}#footer_info">運営者情報</a></li>
 			</ul>
 		</div>
 	</div><!-- /.container -->
