@@ -4,6 +4,7 @@ Homestead.yaml
 Homestead.json
 .env
 /remedy
+/config/app.php
 /app/RealModel
 /app/createmodel
 /public/book_list
