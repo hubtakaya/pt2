@@ -10,3 +10,4 @@ Homestead.json
 /public/book_list
 /public/uploads
 /resources/views/moving
+/config/app.php
