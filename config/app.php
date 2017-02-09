@@ -1,6 +1,17 @@
 <?php
 
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | Application ENV
+    |--------------------------------------------------------------------------
+    |
+    | Upgraded from Laravel 5.1 > 5.2
+    | It was done in Feb 9th 2017.
+    |
+    */
+
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +37,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost:8000',
+    'url' => 'http://suisen-book.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -119,7 +130,6 @@ return [
         Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,
         Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
-        Illuminate\Routing\ControllerServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,
         Illuminate\Database\DatabaseServiceProvider::class,
         Illuminate\Encryption\EncryptionServiceProvider::class,

@@ -29,6 +29,12 @@
 <table>
 <tbody>
 	<tr>
+		<th>Image</th>
+		<td>
+			{!! Form::file('avatar')!!}
+		</td>
+	</tr>
+	<tr>
 		<th>User Name</th>
 		<td>
 			{!! Form::text('name', isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email) !!}

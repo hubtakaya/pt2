@@ -15,6 +15,8 @@ return [
 
     'files' => [
         //
+        realpath(__DIR__.'/.../app/Providers/BusServiceProvider.php'),
+        realpath(__DIR__.'/../app/Providers/ConfigServiceProvider.php'),
     ],
 
     /*

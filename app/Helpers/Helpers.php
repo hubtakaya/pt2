@@ -11,10 +11,10 @@ function cus_path($str){
 }
 
 function get_env(){
-        if (App::environment('local')) {
+        if (\App::environment('local')) {
             $env = "http://localhost:8000";
-        } else if(App::environment('production')) {
-            $env = "http://suisen-book.com";
-        }
+        }  else if(App::environment('production')) {
+             $env = "http://suisen-book.com";
+         }
         return $env;
 }

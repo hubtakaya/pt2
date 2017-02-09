@@ -30,9 +30,11 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
-* {
-	font-family: Meiryo UI;
+body, h1, h2, h3, h4, h5, h6, p, a, li, dt, dd, th, td {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Roboto", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "sans-serif";
+	letter-spacing: 0.5px !important;
 }
+
 
 body {
 	font-size: 0;
