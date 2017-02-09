@@ -3,7 +3,7 @@
 	<link rel="stylesheet" href="{{ get_env() }}/css/base.css" media="all">
 @endsection
 @section('addHeaderDiv')
-	<div id="theme" class="container">
+	<div id="theme">
 		<h1 class="ta-c">推薦図書.com</h1>
 		<p>"読んだことのある本についてユーザーの<!--
 		-->皆さんが自由に感想を投稿していきます。<!--
@@ -61,7 +61,7 @@
 	@foreach($books as $book)
 		<div class="list">
 			<div class="list_image">
-				<img src="{{ get_env() }}/{{ $book->pic->url('original') }}">
+				<img src="{{ get_env() }}{{ $book->pic->url('original') }}">
 			</div>
 			<div class="list_msg">
 				<p class="list_text"><b>{{ $book->title }}</b></br>{{ $book->intro }}</p>
