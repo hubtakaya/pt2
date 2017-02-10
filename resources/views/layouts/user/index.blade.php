@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('addCSS')
-	<link rel="stylesheet" href="{{ get_env() }}/css/base.css" media="all">
 	<link rel="stylesheet" href="{{ get_env() }}/css/MyPage.css" media="all">
 @endsection
 @section('content')

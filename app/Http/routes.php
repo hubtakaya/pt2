@@ -44,6 +44,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'books'], function() {
 Route::get('/auth/login', 'Auth\AuthController@getLogin');
 Route::post('/auth/login', 'Auth\AuthController@postLogin');
 Route::get('/auth/logout', 'Auth\AuthController@getLogout');
+Route::get('/auth/forget-password', 'Auth\PasswordController@SendMail');
+Route::post('/password/email', 'Auth\PasswordController@sendResetLinkEmail');
 
 // 登録のルート定義…
 Route::get('/auth/register', 'Auth\AuthController@getRegister');
@@ -56,3 +58,6 @@ Route::group(['middleware' => 'auth', 'prefix' => 'my-page'], function() {
 	// 投稿した本一覧
 	Route::get('/my-books', 'UserController@myBooks');
 });
+
+// Route::auth();
+// Route::get('/home', 'HomeController@index');

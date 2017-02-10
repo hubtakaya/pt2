@@ -1,7 +1,4 @@
 @extends('layouts.app')
-@section('addCSS')
-	<link rel="stylesheet" href="{{ get_env() }}/css/base.css" media="all">
-@endsection
 @section('addHeaderDiv')
 	<div id="theme">
 		<h1 class="ta-c">推薦図書.com</h1>

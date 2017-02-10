@@ -29,4 +29,9 @@ class PasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    public function SendMail()
+    {
+        return  view('auth.passwords.email');
+    }
 }

@@ -1,7 +1,4 @@
 @extends('layouts.app')
-@section('addCSS')
-	<link rel="stylesheet" href="{{ get_env() }}/css/base.css" media="all">
-@endsection
 @section('content')
 
 @if ($errors->any())
@@ -39,6 +36,7 @@
 </div><!-- #form -->
 
 <p id="newAccount"><a href="{{ get_env() }}/auth/register">※新しくアカウント登録</a></p>
+<p id="newAccount"><a href="{{ get_env() }}/auth/forget-password">※パスワードを忘れた方はコチラ</a></p>
 
 </main>
 @endsection
