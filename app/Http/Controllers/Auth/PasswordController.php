@@ -35,8 +35,4 @@ class PasswordController extends Controller
         return view('auth.passwords.email');
     }
 
-    public function ResetForm()
-    {
-        return view('auth.passwords.reset');
-    }
 }
