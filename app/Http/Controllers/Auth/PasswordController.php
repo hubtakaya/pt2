@@ -32,6 +32,11 @@ class PasswordController extends Controller
 
     public function SendMail()
     {
-        return  view('auth.passwords.email');
+        return view('auth.passwords.email');
+    }
+
+    public function ResetForm()
+    {
+        return view('auth.passwords.reset');
     }
 }

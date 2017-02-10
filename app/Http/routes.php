@@ -44,6 +44,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'books'], function() {
 Route::get('/auth/login', 'Auth\AuthController@getLogin');
 Route::post('/auth/login', 'Auth\AuthController@postLogin');
 Route::get('/auth/logout', 'Auth\AuthController@getLogout');
+
+// Forget Password
 Route::get('/auth/forget-password', 'Auth\PasswordController@SendMail');
 Route::post('/password/email', 'Auth\PasswordController@sendResetLinkEmail');
 
@@ -60,4 +62,5 @@ Route::group(['middleware' => 'auth', 'prefix' => 'my-page'], function() {
 });
 
 // Route::auth();
-// Route::get('/home', 'HomeController@index');
+Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
+Route::post('password/reset', 'Auth\PasswordController@postReset');
