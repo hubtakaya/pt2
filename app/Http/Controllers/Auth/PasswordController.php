@@ -35,4 +35,6 @@ class PasswordController extends Controller
         return view('auth.passwords.email');
     }
 
+    protected $redirectPath = '/my-page';
+
 }
