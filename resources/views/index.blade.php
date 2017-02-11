@@ -8,7 +8,7 @@
 		-->新しく読む本を見つけるきっかけにするも良しのサイトです。</p>
 		<a href="{{ get_env() }}/facebook" id="btn-facebook_login">
 			<i class="fa fa-facebook fa-top" aria-hidden="true"></i>
-			<span class="btn-text">Facebook ログイン</span>
+			<span class="btn-text">Facebook ログイン(準備中)</span>
 		</a>
 		</div><!-- /#title -->
 	</div><!-- /.container -->

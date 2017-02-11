@@ -72,7 +72,8 @@ Route::post('password/reset', 'Auth\PasswordController@postReset');
  */
 
 // FB ログイン (ボタンのリンク先)
-	Route::get('/facebook', 'Auth\FacebookAuthController@facebookLogin');
+	// Route::get('/facebook', 'Auth\FacebookAuthController@facebookLogin');
+	Route::get('/facebook', 'BooksController@index');
 
 	// 認証後の戻りURL
 	Route::get('/facebook/callback', 'Auth\FacebookAuthController@facebookCallback');
