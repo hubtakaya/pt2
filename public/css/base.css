@@ -951,4 +951,37 @@ ul.drawer-menu{
 		}
 		ul.drawer-menu li div#icon_pro p {
 			text-align: center;
-		} 
+		}
+
+/**
+ * Facebook login button
+ */
+
+a#btn-facebook_login {
+	display: block;
+/*	border: 1px solid #2d4373;*/
+	width: 200px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #3b5998;
+	border-radius: 4px;
+}
+	i.fa.fa-facebook {
+		color: #fff;
+		font-size: 18px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-left: 10.6px;
+		padding-right: 11.6px;
+		margin: 3px 0;
+		max-width: 32px;
+		border-right: 1px solid #fff;
+/*		border-right: 1px solid #2d4373;*/
+	}
+	span.btn-text {
+		padding-left: 5px;
+	}
+
+div#theme a#btn-facebook_login {
+	margin: 15px auto 0;
+}

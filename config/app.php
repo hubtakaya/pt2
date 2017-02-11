@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ return [
     |
     */
 
-    'url' => 'http://suisen-book.com',
+    'url' => 'http://localhost:8000',
 
     /*
     |--------------------------------------------------------------------------
@@ -136,6 +136,7 @@ return [
         Illuminate\Filesystem\FilesystemServiceProvider::class,
         Illuminate\Foundation\Providers\FoundationServiceProvider::class,
         Illuminate\Hashing\HashServiceProvider::class,
+        // Illuminate\Html\HtmlServiceProvider::class, // 2017/02/11 追記
         Illuminate\Mail\MailServiceProvider::class,
         Illuminate\Pagination\PaginationServiceProvider::class,
         Illuminate\Pipeline\PipelineServiceProvider::class,
@@ -159,6 +160,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -213,6 +215,7 @@ return [
         // form 設定
         'Form' => Collective\Html\FormFacade::class,  // 追加
         'Html' => Collective\Html\HtmlFacade::class,  // 追加
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,  // 追加
     ],
 
 ];

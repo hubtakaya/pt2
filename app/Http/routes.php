@@ -64,3 +64,22 @@ Route::group(['middleware' => 'auth', 'prefix' => 'my-page'], function() {
 // Route::auth();
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
+
+/**
+ * Social Login
+ * 
+ *
+ */
+
+// FB ログイン (ボタンのリンク先)
+	Route::get('/facebook', 'Auth\FacebookAuthController@facebookLogin');
+
+	// 認証後の戻りURL
+	Route::get('/facebook/callback', 'Auth\FacebookAuthController@facebookCallback');
+
+/**
+ * Laravel\Socialite Github に上がっているやり方。
+ * 
+ * Route::get('auth/facebook', 'Auth\AuthController@FacebookRedirectToProvider');
+ * Route::get('auth/facebook/callback', 'Auth\AuthController@FacebookHandleProviderCallback');
+ */

@@ -6,6 +6,10 @@
 		-->皆さんが自由に感想を投稿していきます。<!--
 		-->同じく読んだことがある人と意見を交換するも良し、<!--
 		-->新しく読む本を見つけるきっかけにするも良しのサイトです。</p>
+		<a href="{{ get_env() }}/facebook" id="btn-facebook_login">
+			<i class="fa fa-facebook fa-top" aria-hidden="true"></i>
+			<span class="btn-text">Facebook ログイン</span>
+		</a>
 		</div><!-- /#title -->
 	</div><!-- /.container -->
 @endsection
