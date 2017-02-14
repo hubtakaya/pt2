@@ -96,7 +96,7 @@ class FacebookAuthController extends Controller
 
                 }
             }catch(Exception $e){
-                return redirect("/");
+                return redirect("/books");
             }
 
             // $user->token;
