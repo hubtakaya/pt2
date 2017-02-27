@@ -80,7 +80,7 @@ class FacebookAuthController extends Controller
         try{
                 $userData = Socialite::driver('facebook')->user();
 
-                if($user){
+                if($userData){
                     // dd($user);
                     // // OAuth Two Providers
                     // $token = $user->token;
