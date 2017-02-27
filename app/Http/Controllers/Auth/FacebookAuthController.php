@@ -78,25 +78,40 @@ class FacebookAuthController extends Controller
     protected function facebookCallback()
     {
         try{
-                $user = Socialite::driver('facebook')->user();
+                $userData = Socialite::driver('facebook')->user();
 
                 if($user){
-                    dd($user);
-                    // OAuth Two Providers
-                    $token = $user->token;
-                    $refreshToken = $user->refreshToken; // not always provided
-                    $expiresIn = $user->expiresIn;
+                    // dd($user);
+                    // // OAuth Two Providers
+                    // $token = $user->token;
+                    // $refreshToken = $user->refreshToken; // not always provided
+                    // $expiresIn = $user->expiresIn;
 
-                    // All Providers
-                    $user->getId();
-                    $user->getNickname();
-                    $user->getName();
-                    $user->getEmail();
-                    $user->getAvatar();
+                    // // All Providers
+                    // $user->getId();
+                    // $user->getNickname();
+                    // $user->getName();
+                    // $user->getEmail();
+                    // $user->getAvatar();
+
+                    $user = User::firstOrCreate([
+                        'name'  => $userData->getName(),
+                        'email' => $userData->getEmail(),
+                    ]);
+
+                    // Avatar が変わっていた時の処理
+                    if($user->avatar != $userData->getAvatar())
+                    {
+                        $user->avatar = $userData->getAvatar();
+                    }
+
+                    Auth::login($user);
+
+                    return redirect("/my-page");
 
                 }
             }catch(Exception $e){
-                return redirect("/books");
+                return redirect("/");
             }
 
             // $user->token;

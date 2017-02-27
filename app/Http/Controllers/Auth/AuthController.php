@@ -58,11 +58,24 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        // avatar が設定されている。
+        if(isset($data['avatar']) == true){
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => bcrypt($data['password']),
+                'avatar' => $data['avatar'],
+            ]);
+        }
+        // avatar が含まれていない。
+        else
+        {
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => bcrypt($data['password']),
+            ]);
+        }
     }
 
     protected $redirectPath = '/my-page';
