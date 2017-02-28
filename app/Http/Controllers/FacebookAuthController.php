@@ -102,11 +102,12 @@ class FacebookAuthController extends Controller
                         'email' => $userData->getEmail(),
                     ]);
 
+                    return redirect("/" . $user->avatar);
+
                     // Avatar が変わっていた時の処理
                     if($user->avatar != $userData->getAvatar())
                     {
                         $user->avatar = $userData->getAvatar();
-                        return redirect("/" . $user->avatar);
                     }
 
                     Auth::login($user);
