@@ -106,6 +106,7 @@ class FacebookAuthController extends Controller
                     if($user->avatar != $userData->getAvatar())
                     {
                         $user->avatar = $userData->getAvatar();
+                        $user->save();
                         return redirect("/books");
                     }
 
