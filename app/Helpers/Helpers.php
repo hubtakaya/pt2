@@ -28,6 +28,7 @@ function get_env(){
 
 function get_MyAvatar(){
 
+    // get() だと複数レコードを取得しようとするのでアウト！
     $userData = DB::table('users')->select('avatar', 'password')->where('id', Auth()->id())->first();
 
     $isSocial = empty($userData->password);
