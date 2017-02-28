@@ -28,7 +28,7 @@
 		<div class="comment clearfix">
 			<div class="icon">
 				<!-- <img src="{{ get_env() }}/uploads/avatars/{{ isset(App\User::find( $comment->user_id )->avatar) ? App\User::find( $comment->user_id )->avatar : 'default.jpg' }}"> -->
-				<img src="{{ get_CommentAvatar() }}">
+				<img src="{{ get_CommentAvatar($coomet->user_id) }}">
 
 				<p class="username">{{ isset(App\User::find( $comment->user_id )->name) ? App\User::find( $comment->user_id )->name : 'Not Found' }}</p>
 			</div><!-- /.icon -->
