@@ -29,9 +29,9 @@ function get_env(){
 function get_MyAvatar(){
 
     // get() だと複数レコードを取得しようとするのでアウト！
-    $userData = DB::table('users')->select('avatar', 'password')->where('id', Auth()->id())->first();
+    $userData  = DB::table('users')->select('avatar', 'password')->where('id', Auth()->id())->first();
 
-    $isSocial = empty($userData->password);
+    $isSocial  = empty($userData->password);
 
     // ソーシャルログイン中の時
     if($isSocial == true)
@@ -42,6 +42,34 @@ function get_MyAvatar(){
     else
     {
         $avatar = get_env() . "/uploads/avatars/" . $userData->avatar;
+    }
+
+    return (string) $avatar;
+}
+
+function get_CommentAvatar($user_id){
+    $userData  = DB::table('users')->select('avatar', 'password')->where('id', $user_id)->first();
+
+    $isSocial  = empty($userData->password);
+    $isDefault = empty($userData->avatar);
+
+    // ソーシャルログイン中の時
+    if($isSocial == true)
+    {
+        $avatar = $userData->avatar;
+    }
+    // ソーシャルログインでない時
+    else
+    {
+        // default でないか？
+        if($isDefault == true)
+        {
+            $avatar = get_env() . "uploads/avatars/default.jpg";
+        }
+        else
+        {
+            $avatar = get_env() . "/uploads/avatars/" . $userData->avatar;
+        }
     }
 
     return (string) $avatar;
