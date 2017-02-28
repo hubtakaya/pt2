@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
-use Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -15,6 +14,9 @@ use App\Http\Requests;
 
 // use Laravel\Socialite\Contracts\Factory as Socialite;
 use Socialite;
+
+// To use Auth Object
+use Auth;
 
 class FacebookAuthController extends Controller
 {
