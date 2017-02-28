@@ -31,7 +31,7 @@
 	<div class="container">
 
 	<div class="h2">
-		<h2 id="top" class="top">推薦図書.com　3つの特徴</h2>
+		<h2 id="top" class="top">推薦図書.com  3つの特徴</h2>
 		<div class="points">
 			<i class="fa fa-id-card fa-top" aria-hidden="true"></i>
 			<div class="points_msg">

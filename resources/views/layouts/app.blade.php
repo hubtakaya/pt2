@@ -45,7 +45,8 @@
                         <a href="{{ get_env() }}/my-page">
                             <div id="icon_pro">
 
-                                <img src="{{ get_env() }}/uploads/avatars/{{ Auth::user()->avatar }}">
+                                <img src="{{ get_MyAvatar() }}">
+                                <!-- <img src="{{ get_env() }}/uploads/avatars/{{ Auth::user()->avatar }}"> -->
                                 <p>{{ DB::table('users')->where('id', Auth::id())->value('name') }} さん</p>
 
                             </div>
